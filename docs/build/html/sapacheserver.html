@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ApacheServer &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="sptconfigure_main.html" />
+    <link rel="next" title="ApacheVHostEditor" href="sapachevhosteditor.html" />
+    <link rel="prev" title="ApacheReverseProxyModules" href="sapachereverseproxy.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">ApacheServer</a><ul>
+<li><a class="reference internal" href="#sinopsis">Sinopsis</a></li>
+<li><a class="reference internal" href="#comando-ayuda">comando Ayuda</a></li>
+<li><a class="reference internal" href="#instalacion">Instalación</a></li>
+<li><a class="reference internal" href="#opciones">Opciones</a></li>
+<li><a class="reference internal" href="#version">versión</a></li>
+<li><a class="reference internal" href="#beneficios">Beneficios</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="sapachereverseproxy.html"
+         title="Previous Chapter: ApacheReverseProxyModules">&laquo; ApacheReversePro...</a></li>
+  <li><a href="sapachevhosteditor.html"
+         title="Next Chapter: ApacheVHostEditor">ApacheVHostEdito... &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/sapacheserver.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+  <li><a href="http://testpage.readthedocs.org">English</a></li>
+   <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+     <li><a href="http://kevellfrench.readthedocs.org">spanish</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="apacheserver">
+<h1>ApacheServer<a class="headerlink" href="#apacheserver" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sinopsis">
+<h2>Sinopsis<a class="headerlink" href="#sinopsis" title="Permalink to this headline">¶</a></h2>
+<p>Esta módulos pretende instalar el servidor Apache. Sin ningún tipo de solicitud, se instalará automáticamente la versión actual del servidor apache mientras instalación.</p>
+</div>
+<div class="section" id="comando-ayuda">
+<h2>comando Ayuda<a class="headerlink" href="#comando-ayuda" title="Permalink to this headline">¶</a></h2>
+<p>El comando de ayuda describe sobre el propósito y los comandos disponibles bajo estos módulos. También explica el comando para instalar el módulo en particular.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure ApacheServer <span class="nb">help</span>
+</pre></div>
+</div>
+<p>La captura de pantalla como se muestra a continuación, representar visualmente el uso del comando de ayuda en virtud de este módulo.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure ApacheServer <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>is part of Core and provides you  with a method by which you can install Apache HTTP Server
+
+ ApacheServer, apache-server, apacheserver
+
+       - install
+       Installs Apache HTTP Server
+       example: ptconfigure apacheserver install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="instalacion">
+<h2>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline">¶</a></h2>
+<p>Es más fácil de instalar esta herramienta en particular en virtud de ptconfigure por el simple uso de la orden dada a continuación,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure ApacheServer install
+</pre></div>
+</div>
+<p>Después de dar el comando anterior, la herramienta le preguntará como</p>
+<p>Install Apache Server? (Y/N)</p>
+<p>si se le da una entrada como Y, el módulo se instalan correctamente.</p>
+<p>La captura de pantalla que figura a continuación explica visualmente sobre los pasos y comandos consiste en la instalación.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure ApacheServer install
+Install Apache Server? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+*******************************
+*        Pharaoh Tools        *
+*         Apache Server!        *
+*******************************
+AH00558: apache2: Could not reliably determine the server<span class="s1">&#39;s fully qualified domain name, using 127.0.1.1. Set the &#39;</span>ServerName<span class="s1">&#39; directive globally to suppress this message</span>
+<span class="s1">Reading package lists...</span>
+<span class="s1">Building dependency tree...</span>
+<span class="s1">Reading state information...</span>
+<span class="s1">The following packages were automatically installed and are no longer required:</span>
+<span class="s1">  php5-cli php5-readline</span>
+<span class="s1">Use &#39;</span>apt-get autoremove<span class="s1">&#39; to remove them.</span>
+<span class="s1">Suggested packages:</span>
+<span class="s1"> apache2-doc apache2-suexec-pristine apache2-suexec-custom apache2-utils</span>
+<span class="s1">The following NEW packages will be installed:</span>
+<span class="s1"> apache2</span>
+<span class="s1">0 upgraded, 1 newly installed, 0 to remove and 39 not upgraded.</span>
+<span class="s1">Need to get 0 B/87.4 kB of archives.</span>
+<span class="s1">After this operation, 473 kB of additional disk space will be used.</span>
+<span class="s1">Selecting previously unselected package apache2.</span>
+<span class="s1">(Reading database ... 193457 files and directories currently installed.)</span>
+<span class="s1">Preparing to unpack .../apache2_2.4.7-1ubuntu4.4_amd64.deb ...</span>
+<span class="s1">Unpacking apache2 (2.4.7-1ubuntu4.4) ...</span>
+<span class="s1">Processing triggers for ureadahead (0.100.0-16) ...</span>
+<span class="s1">ureadahead will be reprofiled on next reboot</span>
+<span class="s1">Processing triggers for ufw (0.34~rc-0ubuntu2) ...</span>
+<span class="s1">Processing triggers for man-db (2.6.7.1-1ubuntu1) ...</span>
+<span class="s1">Setting up apache2 (2.4.7-1ubuntu4.4) ...</span>
+<span class="s1">Enabling module mpm_event.</span>
+<span class="s1">Enabling module authz_core.</span>
+<span class="s1">Enabling module authz_host.</span>
+<span class="s1">Enabling module authn_core.</span>
+<span class="s1">Enabling module auth_basic.</span>
+<span class="s1">Enabling module access_compat.</span>
+<span class="s1">Enabling module authn_file.</span>
+<span class="s1">Enabling module authz_user.</span>
+<span class="s1">Enabling module alias.</span>
+<span class="s1">Enabling module dir.</span>
+<span class="s1">Enabling module autoindex.</span>
+<span class="s1">Enabling module env.</span>
+<span class="s1">Enabling module mime.</span>
+<span class="s1">Enabling module negotiation.</span>
+<span class="s1">Enabling module setenvif.</span>
+<span class="s1">Enabling module filter.</span>
+<span class="s1">Enabling module deflate.</span>
+<span class="s1">Enabling module status.</span>
+<span class="s1">Enabling conf charset.</span>
+<span class="s1">Enabling conf localized-error-pages.</span>
+<span class="s1">Enabling conf other-vhosts-access-log.</span>
+<span class="s1">Enabling conf security.</span>
+<span class="s1">Enabling conf serve-cgi-bin.</span>
+<span class="s1">Enabling site 000-default.</span>
+<span class="s1">* Starting web server apache2</span>
+<span class="s1">*</span>
+<span class="s1">Processing triggers for ureadahead (0.100.0-16) ...</span>
+<span class="s1">Processing triggers for ufw (0.34~rc-0ubuntu2) ...</span>
+<span class="s1">[Pharaoh Logging] Adding Package apache2 from the Packager Apt executed correctly</span>
+<span class="s1">[Pharaoh Logging] Restarting apache2 service</span>
+<span class="s1">AH00558: apache2: Could not reliably determine the server&#39;</span>s fully qualified domain name, using 127.0.1.1. Set the <span class="s1">&#39;ServerName&#39;</span> directive globally to suppress this message
+* Restarting web server apache2
+  ...done.
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+ApacheServer: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="opciones">
+<h2>Opciones<a class="headerlink" href="#opciones" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="23%" />
+<col width="29%" />
+<col width="13%" />
+<col width="35%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parámetros</th>
+<th class="head">parámetros alternativos</th>
+<th class="head">Necesario</th>
+<th class="head">Comentario</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Install Apache Server? (Y/N)</td>
+<td>en lugar de ApacheServer, podemos
+utilizar apache-server,
+apacheserver también.</td>
+<td>Y(Yes)</td>
+<td>Si el usuario da entrada como sí, se va
+a proceder la instalación</td>
+</tr>
+<tr class="row-odd"><td>Install Apache Server? (Y/N)</td>
+<td>en lugar de ApacheServer, podemos
+utilizar apache-server,
+apacheserver también.|</td>
+<td>N(No)</td>
+<td>Si el usuario da entrada como no, que
+se cerrará el proceso de instalación</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="version">
+<h2>versión<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
+<p>Mientras que la herramienta está procesando lo hará agarra automáticamente la versión actualizada más reciente y lo hace para estar listo para la instalación.</p>
+</div>
+<div class="section" id="beneficios">
+<h2>Beneficios<a class="headerlink" href="#beneficios" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Esta módulos de ayuda a los usuarios a instalar el servidor apache. Simplifica el trabajo de los usuarios durante la instalación del servidor   como su&nbsp; comprobar automáticamente la versión actual del servidor apache.</li>
+<li>Es-acomodada en CentOS y así como en Ubuntu.</li>
+<li>Los parámetros utilizados en la declaración no se distingue entre mayúsculas y minúsculas, lo que es una ventaja añadida.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/sapacheserver.rst">
+          ApacheServer
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

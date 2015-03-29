@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Pharaohtools Documentation &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="#" />
+    <link rel="next" title="Jrush" href="sjrush_main.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="#"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Pharaohtools Documentation</a></li>
+<li><a class="reference internal" href="#acerca-pharaohtools">Acerca Pharaohtools</a><ul>
+<li><a class="reference internal" href="#commands">Commands</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="sjrush_main.html"
+         title="Next Chapter: Jrush">Jrush &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/index.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+  <li><a href="http://testpage.readthedocs.org">English</a></li>
+   <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+     <li><a href="http://kevellfrench.readthedocs.org">spanish</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="pharaohtools-documentation">
+<h1>Pharaohtools Documentation<a class="headerlink" href="#pharaohtools-documentation" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="acerca-pharaohtools">
+<h1>Acerca Pharaohtools<a class="headerlink" href="#acerca-pharaohtools" title="Permalink to this headline">¶</a></h1>
+<p>Bienvenido a la documentación pharaohtools !</p>
+<p>Los faraones tiene su propio beneficio mientras que en comparación con otras herramientas , ya que es fácil de usar. En esta herramienta la codificación y todo el proceso depende y basado en php . Como la herramienta faraón se enmarca como por php , es más fácil volver a escribir los códigos si es necesario. Su funcionalidad módulos proporciona soporte para Mac , Linux o Unix , y también para las ventanas. Se conoce como un una ruta más corta que es menos tiempo , limita el uso de mano de obra, reduce la necesidad de información de los usuarios mientras la instalación. No es necesario descargar por separado las plantillas y plug- ins que se utilizan para apoyar las de software , ya que todo se cubre bajo una sola raíz . Es extensible, como si se requiere cualquier módulo adicional que el usuario puede definir y diseñar el módulo de acuerdo a sus necesidades y que puede incluir . También es más simple de volver a escribir la codificación según se requiera. Mediante la instalación de una aplicación única módulos ptconfigure completas según la herramienta faraón quedar envuelto .</p>
+<div class="section" id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scache_jrush.html">Cache</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="scache_jrush.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scache_jrush.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scache_jrush.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scache_jrush.html#opciones">Opciones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scache_jrush.html#site-clear">Site-clear</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scache_jrush.html#admin-clear">Admin-clear</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scache_jrush.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sextension_jrush.html">Extension</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sextension_jrush.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sextension_jrush.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sextension_jrush.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sextension_jrush.html#opciones">Opciones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sextension_jrush.html#disable">Disable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sextension_jrush.html#enable">Enable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sextension_jrush.html#info">Info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sextension_jrush.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sjarticle_jrush.html">JArticle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sjarticle_jrush.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjarticle_jrush.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjarticle_jrush.html#enable">Enable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjarticle_jrush.html#info">Info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjarticle_jrush.html#disable">Disable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjarticle_jrush.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjarticle_jrush.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sjconfiguration_jrush.html">JConfiguration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sjconfiguration_jrush.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjconfiguration_jrush.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjconfiguration_jrush.html#como-configurar">Cómo configurar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjconfiguration_jrush.html#como-reiniciar">Cómo reiniciar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjconfiguration_jrush.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sjfeature_jrush.html">JFeature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sjfeature_jrush.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjfeature_jrush.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjfeature_jrush.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjfeature_jrush.html#folder-default">Folder-default</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjfeature_jrush.html#feature-install">Feature-install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjfeature_jrush.html#feature-pull">Feature-Pull</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjfeature_jrush.html#feature-push">Feature-Push</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjfeature_jrush.html#group-install">Group-install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjfeature_jrush.html#group-install-all">Group-install-all</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjfeature_jrush.html#group-push">Group-push</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjfeature_jrush.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sjuser_jrush.html">JUser</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sjuser_jrush.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjuser_jrush.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjuser_jrush.html#delete">Delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjuser_jrush.html#info">Info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjuser_jrush.html#password">Password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjuser_jrush.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sjuser_jrush.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ssystemdetection_jrush.html">SystemDetection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_jrush.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_jrush.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_jrush.html#detect">Detect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_jrush.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_jrush.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="stestmodule_jrush.html">Test module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="stestmodule_jrush.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stestmodule_jrush.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stestmodule_jrush.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stestmodule_jrush.html#opciones">Opciones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stestmodule_jrush.html#action-one">Action-one</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stestmodule_jrush.html#action-two">Action-two</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stestmodule_jrush.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sversion_jrush.html">Version</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sversion_jrush.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sversion_jrush.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sversion_jrush.html#available">Available</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sversion_jrush.html#current">Current</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sversion_jrush.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sversion_jrush.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sptconfigure_main.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptconfigure_main.html#instalacion">instalación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptconfigure_main.html#comando-para-instalar-git-y-php5-en-ubuntu">comando para instalar git y php5 en ubuntu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptconfigure_main.html#comando-para-instalar-git-y-php5-en-ciento-os">comando para instalar git y php5 en ciento OS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptconfigure_main.html#para-mac-linux-o-unix">Para Mac, Linux o Unix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptconfigure_main.html#para-windows">para Windows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sptconfigure_main.html#modulos-disponibles">Módulos disponibles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sptconfigure_main.html#como-utilizar">Cómo utilizar</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sptconfigure_main.html#video-moldeada-instruccion">Vídeo moldeada Instrucción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptconfigure_main.html#el-comando-ayuda">El comando Ayuda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sptconfigure_main.html#jugando-con-modulos-ptconfigure">Jugando con módulos PTConfigure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="samazoncloudfront.html">Amazon CloudFront</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="samazoncloudfront.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazoncloudfront.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazoncloudfront.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazoncloudfront.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="samazoncloudwatch.html">Amazon CloudWatch</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="samazoncloudwatch.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazoncloudwatch.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazoncloudwatch.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazoncloudwatch.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="samazondynamodb.html">Amazon DynamoDB</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="samazondynamodb.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazondynamodb.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazondynamodb.html#describe-table">Describe-table</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazondynamodb.html#delete-table">Delete-table</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazondynamodb.html#create-table">Create-table</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazondynamodb.html#list">List</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazondynamodb.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazondynamodb.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="samazonelasticache.html">Amazon ElastiCache</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="samazonelasticache.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonelasticache.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonelasticache.html#create-cache-cluster">Create-cache-cluster</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonelasticache.html#create-health-check">Create-health-check</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonelasticache.html#reboot-cache-cluster">Reboot-cache-cluster</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonelasticache.html#delete-cache-cluster">Delete-cache-cluster</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonelasticache.html#delete-replication-group">Delete-replication-group</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonelasticache.html#list">List</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonelasticache.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonelasticache.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="samazonroute53.html">AMAZON ROUTE 53</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="samazonroute53.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonroute53.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonroute53.html#create-hosted-zone">Create-hosted-zone</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonroute53.html#create-health-check">Create-health-check</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonroute53.html#delete-hosted-zone">Delete-hosted-zone</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonroute53.html#delete-health-check">Delete-health-check</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonroute53.html#list">List</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonroute53.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazonroute53.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="samazons3.html">Amazon S3</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="samazons3.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazons3.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazons3.html#ensure-bucket-exists">Ensure-bucket-exists</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazons3.html#add-object">Add-object</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazons3.html#remove-bucket">Remove-bucket</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazons3.html#remove-object-all">Remove-object-all</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazons3.html#remove-object">Remove-object</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazons3.html#list">List</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazons3.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="samazons3.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sawscloudformation.html">AWSCloudFormation</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sawscloudformation.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawscloudformation.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawscloudformation.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawscloudformation.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawscloudformation.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sawsrds.html">AWS RDS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#describe-instance">Describe-instance</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#delete-instance">Delete-instance</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#create-db-snapshot">Create-db-snapshot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#delete-db-snapshot">Delete-db-snapshot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#copy-db-snapshot">Copy-db-snapshot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#create-instance">Create-instance</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#reboot-instance">Reboot-instance</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#create-instance-read-replica">Create-instance-read replica</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#list">List</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawsrds.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sapacheconf.html">ApacheConf</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sapacheconf.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapacheconf.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapacheconf.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapacheconf.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapacheconf.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sapachemodules.html">ApacheModules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sapachemodules.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachemodules.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachemodules.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachemodules.html#opcion">opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachemodules.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sapachereverseproxy.html">ApacheReverseProxyModules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sapachereverseproxy.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachereverseproxy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachereverseproxy.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachereverseproxy.html#opcion">opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachereverseproxy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sapacheserver.html">ApacheServer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sapacheserver.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapacheserver.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapacheserver.html#instalacion">Instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapacheserver.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapacheserver.html#version">versión</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapacheserver.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sapachevhosteditor.html">ApacheVHostEditor</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sapachevhosteditor.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachevhosteditor.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachevhosteditor.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachevhosteditor.html#anadir">añadir</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachevhosteditor.html#mas-balancer">Más- Balancer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachevhosteditor.html#quitar">quitar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachevhosteditor.html#lista">lista</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachevhosteditor.html#permitir">permitir</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachevhosteditor.html#inhabilitar">inhabilitar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapachevhosteditor.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sapt.html">Apt</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#diferentes-caracteristicas-de-apt">Diferentes características de Apt</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#crear">CREAR</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#retire">RETIRE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#contrasena-set">CONTRASEÑA SET</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#existe">EXISTE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#grupos-ver">GRUPOS VER</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#anadir-to-group">AÑADIR _TO_GROUP</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#remove-from-group">REMOVE_FROM_GROUP</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sapt.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="saptana.html">Aptana</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="saptana.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="saptana.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="saptana.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="saptana.html#la-desinstalacion">La desinstalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="saptana.html#plataforma-y-lenguaje-apoyo">Plataforma y Lenguaje apoyo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="saptana.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sautopilot.html">Autopilot</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sautopilot.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sautopilot.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sautopilot.html#instalacion">Instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sautopilot.html#ejecutar">ejecutar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sautopilot.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sautopilot.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sawstats.html">Awstats</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sawstats.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawstats.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawstats.html#instalacion">Instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawstats.html#caracteristicas-del-awstats">Características del Awstats</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawstats.html#requisitos-de-awstats">Requisitos de Awstats</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sawstats.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sbehat.html">Behat</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sbehat.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sbehat.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sbehat.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sbehat.html#version">versión</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sbehat.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sboxify.html">Boxify</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sboxify.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sboxify.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sboxify.html#varias-funciones-de-boxify">Varias funciones de boxify</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sboxify.html#instale-pilotos-automaticos-genericos">Instale pilotos automáticos genéricos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sboxify.html#cuadro-adicion">cuadro Adición</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sboxify.html#cuadro-de-extraccion">cuadro de Extracción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sboxify.html#la-destruccion-de-una-caja">La destrucción de una caja</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sboxify.html#lista">Lista</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sboxify.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sboxify.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="scassandra.html">Cassandra</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="scassandra.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scassandra.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scassandra.html#instalacion">Instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scassandra.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scassandra.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="schgrp.html">Chgrp</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="schgrp.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schgrp.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schgrp.html#camino">Camino</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schgrp.html#parametro-alternativa">Parámetro Alternativa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schgrp.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="schmode.html">Chmode</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="schmode.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schmode.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schmode.html#camino">Camino</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schmode.html#parametro-alternativa">Parámetro Alternativa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schmode.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="schown.html">Chown</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="schown.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schown.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schown.html#camino">camino</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schown.html#opcion">opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schown.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="schrome.html">Chrome</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="schrome.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schrome.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schrome.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schrome.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schrome.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="schromedriver.html">ChromeDriver</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="schromedriver.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schromedriver.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schromedriver.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="schromedriver.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="scitadel.html">Citadel</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="scitadel.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scitadel.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scitadel.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scitadel.html#configuracion">configuración</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scitadel.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="scomposer.html">Composer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="scomposer.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scomposer.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scomposer.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scomposer.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="scleofy.html">Cleofy</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#funciones-de-cleofy">Funciones de cleofy</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#lista">lista</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#estandar">estándar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#diminuto">diminuto</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#medio">medio</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#medium-web">Medium_Web</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#db-cluster">DB_cluster</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#install-generic-autopilots">Install_generic_autopilots</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scleofy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="scopy.html">Copy</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="scopy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scopy.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scopy.html#poner">poner</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scopy.html#parametro-alternativa">Parámetro Alternativa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scopy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sdevelopertools.html">DeveloperTools</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sdevelopertools.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdevelopertools.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdevelopertools.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdevelopertools.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdevelopertools.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sdigitalocean.html">DigitalOcean</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sdigitalocean.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdigitalocean.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdigitalocean.html#caracteristicas-del-oceano-digital">Características del océano digital</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdigitalocean.html#box-add">Box_Add</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdigitalocean.html#box-destroy">Box_Destroy</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdigitalocean.html#box-destroy-all">Box_Destroy_All</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdigitalocean.html#save-ssh-key">Save_Ssh_key</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdigitalocean.html#lista">lista</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdigitalocean.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdigitalocean.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sdnsify.html">Dnsify</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sdnsify.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdnsify.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdnsify.html#varias-funciones-de-dnsify">Varias funciones de dnsify</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdnsify.html#instale-pilotos-automaticos-genericos">Instale pilotos automáticos genéricos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdnsify.html#cuadro-adicion">cuadro Adición</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdnsify.html#cuadro-de-extraccion">cuadro de Extracción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdnsify.html#la-destruccion-de-una-caja">La destrucción de una caja</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdnsify.html#lista">lista</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdnsify.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdnsify.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sdocker.html">Docker</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sdocker.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdocker.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdocker.html#instalacion">Instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdocker.html#la-desinstalacion">La desinstalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdocker.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sdocker.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sencryption.html">Encryption</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sencryption.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sencryption.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sencryption.html#instalar">instalar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sencryption.html#desinstalar">Desinstalar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sencryption.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sencryption.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="senvironmentconfig.html">EnvironmentConfig</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="senvironmentconfig.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="senvironmentconfig.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="senvironmentconfig.html#como-configurar-el-entorno">Cómo configurar el entorno</a></li>
+<li class="toctree-l5"><a class="reference internal" href="senvironmentconfig.html#como-eliminar-configuracion-del-entorno">Cómo eliminar configuración del entorno</a></li>
+<li class="toctree-l5"><a class="reference internal" href="senvironmentconfig.html#como-listar-configuracion-del-entorno">Cómo listar configuración del entorno</a></li>
+<li class="toctree-l5"><a class="reference internal" href="senvironmentconfig.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="senvironmentconfig.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sfile.html">File</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sfile.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfile.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfile.html#crear">crear</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfile.html#borrar">borrar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfile.html#existe">existe</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfile.html#anexar">anexar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfile.html#en-caso-de-tener-line">En caso de-tener-line</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfile.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfile.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sfirefox.html">FireFox</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sfirefox14.html">FireFox14</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox14.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox14.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox14.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox14.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox14.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sfirefox17.html">FireFox17</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox17.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox17.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox17.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox17.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox17.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sfirefox24.html">FireFox24</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox24.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox24.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox24.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox24.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox24.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sfirefox33.html">FireFox33</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox33.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox33.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox33.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox33.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirefox33.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sfirewall.html">Firewall</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sfirewall.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirewall.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirewall.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sfirewall.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sgem.html">Gem</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#diferentes-caracteristicas-de-la-gema">Diferentes características de la gema</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#crear">crear</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#retire">RETIRE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#contrasena-set">CONTRASEÑA SET</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#existe">EXISTE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#grupos-ver">GRUPOS VER</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#anadir-to-group">AÑADIR _TO_GROUP</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#remove-from-group">REMOVE_FROM_GROUP</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgem.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sgenerator.html">Generator</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sgenerator.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgenerator.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgenerator.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgenerator.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sgimp.html">GIMP</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sgimp.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgimp.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgimp.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgimp.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sgitbucket.html">Gitbucket</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sgitbucket.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitbucket.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitbucket.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitbucket.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitbucket.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sgitkeysafe.html">GitKeySafe</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sgitkeysafe.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitkeysafe.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitkeysafe.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitkeysafe.html#opcion">opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitkeysafe.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sgitlab.html">Git lab</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sgitlab.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitlab.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitlab.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitlab.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgitlab.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sgittools.html">Git tools</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sgittools.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgittools.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgittools.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgittools.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sgittools.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="shaproxy.html">HAProxy</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="shaproxy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shaproxy.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shaproxy.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shaproxy.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shaproxy.html#configuracion">configuración</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shaproxy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="shhvm.html">HHVM</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="shhvm.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shhvm.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shhvm.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shhvm.html#desinstalacion">desinstalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shhvm.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="shostname.html">Hostname</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="shostname.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shostname.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shostname.html#cambio">cambio</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shostname.html#show">show</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shostname.html#opcion">opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="shostname.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sinstallpackage.html">InstallPackage</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sinstallpackage.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinstallpackage.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinstallpackage.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinstallpackage.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinstallpackage.html#dev-cliente">Dev-cliente</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinstallpackage.html#dev-servidor">Dev-servidor</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinstallpackage.html#test-servidor">Test-servidor</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinstallpackage.html#construir-servidor">construir servidor</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinstallpackage.html#produccion">producción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinstallpackage.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sintellij.html">IntelliJ</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sintellij.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sintellij.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sintellij.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sintellij.html#parametros">parámetros</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sintellij.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sinvoke.html">Invoke</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sinvoke.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinvoke.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinvoke.html#llegar">llegar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinvoke.html#parametro-alternativa">Parámetro Alternativa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sinvoke.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sjasmine.html">Jasmine</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sjasmine.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjasmine.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjasmine.html#instalacion">Instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjasmine.html#objetivos">Objetivos</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sjava.html">JAVA</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sjava.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjava.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjava.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjava.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sjenkins.html">Jenkins</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sjenkins.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkins.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkins.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkins.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkins.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sjenkinsplugins.html">JenkinsPlugins</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sjenkinsplugins.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkinsplugins.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkinsplugins.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkinsplugins.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkinsplugins.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sjenkinssudonopass.html">JenkinsSudoNoPass</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sjenkinssudonopass.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkinssudonopass.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkinssudonopass.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkinssudonopass.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjenkinssudonopass.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sjetty.html">Jetty</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sjetty.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjetty.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjetty.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjetty.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjetty.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sjmeter.html">Jmeter</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sjmeter.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjmeter.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjmeter.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjmeter.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sjrush.html">Jrush</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sjrush.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjrush.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjrush.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjrush.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sjrush.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="slighttpdserver.html">LigHTTPDServer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="slighttpdserver.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="slighttpdserver.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="slighttpdserver.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="slighttpdserver.html#opciones">opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="slighttpdserver.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="slogging.html">Logging</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="slogging.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="slogging.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="slogging.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="slogging.html#opcion">opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="slogging.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="smediatools.html">MediaTools</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="smediatools.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smediatools.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smediatools.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smediatools.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smediatools.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="smemcached.html">Memcached</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="smemcached.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smemcached.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smemcached.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smemcached.html#funciones-de-memcached">Funciones de memcached</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smemcached.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sminify.html">Minify</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sminify.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sminify.html#comando-ayuda">Comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sminify.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sminify.html#opcion">opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sminify.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="smkdir.html">Mkdir</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="smkdir.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smkdir.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smkdir.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smkdir.html#creacion-de-un-mc-dir">Creación de un Mc Dir</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smkdir.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="smodulemanager.html">ModuleManager</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="smodulemanager.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smodulemanager.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smodulemanager.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smodulemanager.html#permitir">permitir</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smodulemanager.html#inhabilitar">inhabilitar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smodulemanager.html#asegurar">asegurar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smodulemanager.html#desinstalar">Desinstalar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smodulemanager.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="smongodb.html">MongoDB</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="smongodb.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smongodb.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smongodb.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smongodb.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smongodb.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="smysqladmins.html">MysqlAdmins</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="smysqladmins.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smysqladmins.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smysqladmins.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smysqladmins.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="smysqlserver.html">Mysqlserver</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="smysqlserver.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smysqlserver.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smysqlserver.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smysqlserver.html#durante-la-instalacion-se-produce-el-siguiente-proceso">Durante la instalación, se produce el siguiente proceso</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smysqlserver.html#opciones-adicionales">Opciones adicionales</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smysqlserver.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="smysqltools.html">MysqlTools</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="smysqltools.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smysqltools.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smysqltools.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="smysqltools.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="snagiosserver.html">NagiosServer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="snagiosserver.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snagiosserver.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snagiosserver.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snagiosserver.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snagiosserver.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="snetbeans.html">NetBeans</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="snetbeans.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snetbeans.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snetbeans.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snetbeans.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snetbeans.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="snetworktools.html">NetworkTools</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="snetworktools.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snetworktools.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snetworktools.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snetworktools.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="snewrelic.html">Newrelic</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="snewrelic.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snewrelic.html#comando-ayuda">Comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snewrelic.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snewrelic.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snewrelic.html#beneficios">Beneficios</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snewrelic.html#ventajas-tecnicas">ventajas técnicas</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snewrelic.html#ventajas-para-la-empresa">ventajas para la empresa</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="snginxserver.html">NginxServer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="snginxserver.html#synopsis">Synopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snginxserver.html#help-command">Help Command</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snginxserver.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snginxserver.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="snodejs.html">Node-JS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="snodejs.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snodejs.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snodejs.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="snodejs.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sopenoffice.html">OpenOffice</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sopenoffice.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sopenoffice.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sopenoffice.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sopenoffice.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="soracle.html">Oracle</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="soracle.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="soracle.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="soracle.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="soracle.html#opcion">opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="soracle.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="spackagemanager.html">PackageManager</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="spackagemanager.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spackagemanager.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spackagemanager.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spackagemanager.html#paquete-a-instalar">Paquete a instalar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spackagemanager.html#pkg-garantizar">Pkg-garantizar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spackagemanager.html#pkg-remove">Pkg-remove</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spackagemanager.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sparallax.html">Parallax</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sparallax.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sparallax.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sparallax.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sparallax.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="spear.html">Pear</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="spear.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spear.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spear.html#crear">crear</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spear.html#quitar">quitar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spear.html#establecer-contrasena">Establecer contraseña</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spear.html#existe">existe</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spear.html#mostrar-grupos">Mostrar grupos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spear.html#anadir-al-grupo">Añadir al grupo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spear.html#eliminar-de-grupo">Eliminar de grupo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spear.html#parametro-alternativa">Parámetro Alternativa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spear.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="specl.html">PECL</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="specl.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="specl.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="specl.html#crear">crear</a></li>
+<li class="toctree-l5"><a class="reference internal" href="specl.html#quitar">quitar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="specl.html#establecer-contrasena">Establecer contraseña</a></li>
+<li class="toctree-l5"><a class="reference internal" href="specl.html#existe">existe</a></li>
+<li class="toctree-l5"><a class="reference internal" href="specl.html#show-grupo">Show-Grupo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="specl.html#add-to-grupos">Add-To-Grupos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="specl.html#remove-de-grupo">Remove-de-grupo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="specl.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphake.html">Phake</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphake.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphake.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphake.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphake.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphake.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="spharaohtools.html">PharaohTools</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="spharaohtools.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spharaohtools.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spharaohtools.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spharaohtools.html#asegurar">Asegurar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spharaohtools.html#ptdeploy">Ptdeploy</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spharaohtools.html#pttest">Pttest</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spharaohtools.html#jrush">Jrush</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spharaohtools.html#opciones-adicionales">Opciones Adicionales</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spharaohtools.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpapc.html">PHPAPC</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpapc.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpapc.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpapc.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpapc.html#funciones-de-apc">Funciones de APC</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpapc.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpci.html">Phpci</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpci.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpci.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpci.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpci.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpcodebeautifier.html">PHPCodeBeautifier</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpcodebeautifier.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpcodebeautifier.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpcodebeautifier.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpcodebeautifier.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpcodebeautifier.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpconf.html">phpconf</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpconf.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpconf.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpconf.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpconf.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpconf.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpcs.html">PHPCS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpcs.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpcs.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpcs.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpcs.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpdox.html">PHPDox</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpdox.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpdox.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpdox.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpdox.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpeclipse.html">PHPEclipse</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpeclipse.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpeclipse.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpeclipse.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpeclipse.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpeclipse.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpedit.html">PHPEdit</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpedit.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpedit.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpedit.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpedit.html#opcion">opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpedit.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpmodules.html">PHPModules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpmodules.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpmodules.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpmodules.html#instalacion">Instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpmodules.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpmd.html">PHPMD</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpmd.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpmd.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpmd.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpmd.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpmd.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpssh.html">PhpSSH</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpssh.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpssh.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpssh.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpssh.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpstrom.html">PHPStorm</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpstrom.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpstrom.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpstrom.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpstrom.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpunit.html">PHPUnit</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpunit.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpunit.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpunit.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpunit.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sphpvm.html">PHPVM</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sphpvm.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpvm.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpvm.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sphpvm.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sping.html">Ping</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sping.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sping.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sping.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sping.html#una-vez-opcion">Una vez Opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sping.html#diez-opcion">Diez Opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sping.html#hasta-responder">hasta responder</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sping.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sping.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sport.html">Port</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sport.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sport.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sport.html#anfitrion-local">anfitrión local</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sport.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sport.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="spostgressserver.html">PostgresServer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="spostgressserver.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spostgressserver.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spostgressserver.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spostgressserver.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sprocess.html">Process</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sprocess.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sprocess.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sprocess.html#como-definir-y-utilizar-el-proceso">¿Cómo definir y utilizar el proceso</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sprocess.html#matar-a-un-proceso-utilizando-un-pid">Matar a un proceso utilizando un PID</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sprocess.html#como-puedo-verificar-que-el-proceso-se-ha-ido-mato">¿Cómo puedo verificar que el proceso se ha ido / mató?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sprocess.html#como-puedo-matar-a-dos-o-mas-pid">¿Cómo puedo matar a dos o más PID?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sprocess.html#saluda-a-matar-a-todos-los-comandos">Saluda a matar a todos los comandos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sprocess.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sptbuild_configure.html">PTBuild</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sptbuild_configure.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptbuild_configure.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptbuild_configure.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptbuild_configure.html#desinstalar">Desinstalar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptbuild_configure.html#asegurar">asegurar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptbuild_configure.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptbuild_configure.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sptconfigure.html">PTConfigure</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sptconfigure.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptconfigure.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptconfigure.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptconfigure.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sptdeploy_configure.html">PTDeploy</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sptdeploy_configure.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptdeploy_configure.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptdeploy_configure.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptdeploy_configure.html#asegurar">asegurar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptdeploy_configure.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptdeploy_configure.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="spttest_configure.html">PTTest</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="spttest_configure.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spttest_configure.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spttest_configure.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spttest_configure.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spttest_configure.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sptvirtualize_configure.html">PTVirtualize</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sptvirtualize_configure.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptvirtualize_configure.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptvirtualize_configure.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptvirtualize_configure.html#opcion">opción</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sptvirtualize_configure.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="spython.html">Python</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="spython.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spython.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spython.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spython.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="spython.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sra.html">Ra</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sra.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sra.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sra.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sra.html#asegurar">asegurar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sra.html#desinstalar">Desinstalar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sra.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sra.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="srackspace.html">Rackspace</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="srackspace.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srackspace.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srackspace.html#box-add">Box- add</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srackspace.html#box-destruir">Box- destruir</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srackspace.html#box-destruir-todo">Box- destruir - todo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srackspace.html#save-ssh-clave">Save- ssh- clave</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srackspace.html#lista">lista</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srackspace.html#lista-de-los-contenedores">Lista de los contenedores</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srackspace.html#lista-de-los-objetos">Lista de los objetos-</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srackspace.html#parametro-alternativa">Parámetro Alternativa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srackspace.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sredis.html">Redis</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sredis.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sredis.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sredis.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sredis.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sredis.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="srubybdd.html">RubyBDD</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="srubybdd.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubybdd.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubybdd.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubybdd.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubybdd.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="srubyrvm.html">RubyRVM</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="srubyrvm.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubyrvm.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubyrvm.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubyrvm.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubyrvm.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="srubysystem.html">RubySystem</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="srubysystem.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubysystem.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubysystem.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubysystem.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="srubysystem.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sruncommand.html">Run Command</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sruncommand.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sruncommand.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sruncommand.html#como-usar-el-comando-ejecutar">Cómo usar el comando Ejecutar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sruncommand.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sseleniumserver.html">Selenium Server</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sseleniumserver.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sseleniumserver.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sseleniumserver.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sseleniumserver.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sseleniumserver.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sservice.html">Service</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sservice.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sservice.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sservice.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sservice.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ssftp.html">SFTP</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ssftp.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssftp.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssftp.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssftp.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssftp.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ssimpletest.html">Simpletest</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ssimpletest.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssimpletest.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssimpletest.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssimpletest.html#la-desinstalacion">La desinstalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssimpletest.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sskipfish.html">Skipfish</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sskipfish.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sskipfish.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sskipfish.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sskipfish.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sskipfish.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ssshencrypt.html">SshEncrypt</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ssshencrypt.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshencrypt.html#comando-ayuda">Comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshencrypt.html#parametro-alternativa">parámetro Alternativa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshencrypt.html#cifrar">Cifrar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshencrypt.html#unencrypt">unencrypt</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshencrypt.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ssshharden.html">SshHarden</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ssshharden.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshharden.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshharden.html#securify">Securify</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshharden.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ssshkeygen.html">SshKeygen</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeygen.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeygen.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeygen.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeygen.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeygen.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ssshkeyinstall.html">SshKeyInstall</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeyinstall.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeyinstall.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeyinstall.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeyinstall.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeyinstall.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ssshkeystore.html">SshKeyStore</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeystore.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeystore.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeystore.html#encontrar">encontrar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeystore.html#parametro-alternativa">Parámetro Alternativa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssshkeystore.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sstandardtools.html">StandardTools</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sstandardtools.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sstandardtools.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sstandardtools.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sstandardtools.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sstandardtools.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sstoryplayer.html">Storyplayer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sstoryplayer.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sstoryplayer.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sstoryplayer.html#instalacion">Instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sstoryplayer.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ssudonopass.html">Sudonopass</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ssudonopass.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssudonopass.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssudonopass.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssudonopass.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssudonopass.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ssvn.html">SVN</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ssvn.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssvn.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssvn.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssvn.html#un-instalar">Un instalar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssvn.html#asegurar">asegurar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssvn.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ssystemdetection.html">SystemDetection</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ssystemdetection.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssystemdetection.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssystemdetection.html#deteccion">detección</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssystemdetection.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ssystemdetection.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="steamcity.html">Teamcity module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="steamcity.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="steamcity.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="steamcity.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="steamcity.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="steamcity.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="stemplating.html">Templating</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="stemplating.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="stemplating.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="stemplating.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="stemplating.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="stemplating.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="stomcat.html">Tomcat</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="stomcat.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="stomcat.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="stomcat.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="stomcat.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="stomcat.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="subuntucompiler.html">Ubuntu Compiler</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="subuntucompiler.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="subuntucompiler.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="subuntucompiler.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="subuntucompiler.html#opciones">opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="subuntucompiler.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="suser.html">User</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="suser.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="suser.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="suser.html#crear">crear</a></li>
+<li class="toctree-l5"><a class="reference internal" href="suser.html#quitar">quitar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="suser.html#set-contrasena">Set-contraseña</a></li>
+<li class="toctree-l5"><a class="reference internal" href="suser.html#existe">existe</a></li>
+<li class="toctree-l5"><a class="reference internal" href="suser.html#mostrar-grupos">Mostrar grupos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="suser.html#add-a-grupo">Add-a grupo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="suser.html#remove-de-grupo">Remove-de-grupo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="suser.html#parametro-alternativa">Parámetro Alternativa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="suser.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="svarnish.html">Varnish</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="svarnish.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svarnish.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svarnish.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svarnish.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="svirtualbox.html">Virtualbox</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="svirtualbox.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svirtualbox.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svirtualbox.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svirtualbox.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svirtualbox.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="svmplayer.html">Vmplayer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="svmplayer.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svmplayer.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svmplayer.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svmplayer.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svmplayer.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="svmwareworkstation.html">VMwareWorkstation</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="svmwareworkstation.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svmwareworkstation.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svmwareworkstation.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svmwareworkstation.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svmwareworkstation.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="svnc.html">VNC</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="svnc.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svnc.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svnc.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svnc.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="svncpassword.html">VNCPasswd</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="svncpassword.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svncpassword.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svncpassword.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svncpassword.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="svncpassword.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="swireframesketcher.html">Wireframe sketcher</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="swireframesketcher.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="swireframesketcher.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="swireframesketcher.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="swireframesketcher.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="swireframesketcher.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sxcache.html">Xcache</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sxcache.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sxcache.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sxcache.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sxcache.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sxcache.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="sxvfb.html">Xvfb</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="sxvfb.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sxvfb.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sxvfb.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="sxvfb.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="szendserver.html">Zend Server</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="szendserver.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="szendserver.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="szendserver.html#instalacion">instalación</a></li>
+<li class="toctree-l5"><a class="reference internal" href="szendserver.html#opciones">Opciones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="szendserver.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sptdeploy_main.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptdeploy_main.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptdeploy_main.html#por-que-construir-este-ptdeploy">¿Por qué construir este ptdeploy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptdeploy_main.html#instalacion">Instalación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptdeploy_main.html#instalacion-ptdeploy-traves-ptconfigure">Instalación ptdeploy través ptconfigure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptdeploy_main.html#instalacion-del-ptdeploy-sin-depender-de-ptconfigure">Instalación del ptdeploy sin depender de ptconfigure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptdeploy_main.html#las-funciones-avanzadas">Las funciones avanzadas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptdeploy_main.html#la-manera-como-el-ptdeploy-promueve-su-proyecto-usando-dapperfy">La manera cómo el ptdeploy promueve su proyecto usando dapperfy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptdeploy_main.html#capify-vs-dapperfy">Capify Vs Dapperfy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sptdeploy_main.html#como-utilizar-y-modulos-disponibles">Cómo utilizar y módulos disponibles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sapachecontrol_deploy.html">Apache Control</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sapachecontrol_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachecontrol_deploy.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachecontrol_deploy.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachecontrol_deploy.html#funcion-de-arranque">función de arranque</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachecontrol_deploy.html#funcion-stop">Función Stop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachecontrol_deploy.html#reinicie-una-funcion">Reinicie una función</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachecontrol_deploy.html#recarga-de-una-funcion">Recarga de una función</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachecontrol_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sapachevhosteditor_deploy.html">ApacheVHostEditor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sapachevhosteditor_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachevhosteditor_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachevhosteditor_deploy.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachevhosteditor_deploy.html#anadir">añadir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachevhosteditor_deploy.html#mas-balancer">Más- Balancer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachevhosteditor_deploy.html#quitar">quitar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachevhosteditor_deploy.html#lista">lista</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachevhosteditor_deploy.html#permitir">permitir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachevhosteditor_deploy.html#inhabilitar">inhabilitar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sapachevhosteditor_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sautopilot_deploy.html">Autopilot</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sautopilot_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sautopilot_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sautopilot_deploy.html#instalacion">instalación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sautopilot_deploy.html#opciones">Opciones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sautopilot_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sdapperfy_deploy.html">Dapperfy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sdapperfy_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdapperfy_deploy.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdapperfy_deploy.html#como-utilizar-dapper-standard">Cómo utilizar Dapper Standard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdapperfy_deploy.html#como-utilizar-la-lista-dapperfy">Cómo utilizar la Lista Dapperfy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdapperfy_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sdbconfigure_deploy.html">DBConfigure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sdbconfigure_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdbconfigure_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdbconfigure_deploy.html#parametro-alternativa">parámetro Alternativa</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdbconfigure_deploy.html#configurar-conf">Configurar, conf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdbconfigure_deploy.html#reajustar">reajustar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdbconfigure_deploy.html#opcion">opción</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdbconfigure_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sdbinstall_deploy.html">DBInstall</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sdbinstall_deploy.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdbinstall_deploy.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdbinstall_deploy.html#instalacion">instalación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdbinstall_deploy.html#gota">gota</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdbinstall_deploy.html#parametro-alternativa">Parámetro Alternativa</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdbinstall_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sdrupal_deploy.html">Drupal</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sdrupal_deploy.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdrupal_deploy.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdrupal_deploy.html#como-dapperfy-drupal">Cómo Dapperfy Drupal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sdrupal_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="senvironmentconfig_deploy.html">EnvironmentConfig</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="senvironmentconfig_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="senvironmentconfig_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="senvironmentconfig_deploy.html#como-configurar-el-entorno">Cómo configurar el entorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="senvironmentconfig_deploy.html#como-eliminar-configuracion-del-entorno">Cómo eliminar configuración del entorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="senvironmentconfig_deploy.html#como-listar-configuracion-del-entorno">Cómo listar configuración del entorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="senvironmentconfig_deploy.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="senvironmentconfig_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sgitclone_deploy.html">GitClone</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sgitclone_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sgitclone_deploy.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sgitclone_deploy.html#como-utilizar-las-funciones-de-pago-y-envio">Cómo utilizar las funciones de pago y envío</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sgitclone_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sgrafana_deploy.html">Grafana</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sgrafana_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sgrafana_deploy.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sgrafana_deploy.html#instalacion">instalación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sgrafana_deploy.html#beneficios">Beneficios</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sgrafana_deploy.html#grafito-editor-target">Grafito Editor Target</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sgrafana_deploy.html#graficando">Graficando</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sgrafana_deploy.html#dashboards">Dashboards</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="shosteditor_deploy.html">Host Editor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="shosteditor_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="shosteditor_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="shosteditor_deploy.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="shosteditor_deploy.html#add">Add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="shosteditor_deploy.html#quitar">quitar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="shosteditor_deploy.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sinvoke_deploy.html">Invoke</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sinvoke_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sinvoke_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sinvoke_deploy.html#cli">Cli</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sinvoke_deploy.html#script">script</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sinvoke_deploy.html#data">Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sinvoke_deploy.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sinvoke_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sjoomla_deploy.html">Joomla</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sjoomla_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sjoomla_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sjoomla_deploy.html#instalacion">instalación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sjoomla_deploy.html#dapperfy">Dapperfy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sjoomla_deploy.html#builderfy">Builderfy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sjoomla_deploy.html#ejecutar">ejecutar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sjoomla_deploy.html#opciones">Opciones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sjoomla_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="slighttpdcontrol_deploy.html">LighttpdControl</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="slighttpdcontrol_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slighttpdcontrol_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slighttpdcontrol_deploy.html#parametro-alternativa">Parámetro Alternativa</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slighttpdcontrol_deploy.html#comienzo">comienzo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slighttpdcontrol_deploy.html#detengase">Deténgase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slighttpdcontrol_deploy.html#reanudar">reanudar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slighttpdcontrol_deploy.html#recargar">recargar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slighttpdcontrol_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="slogging_deploy.html">Logging</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="slogging_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slogging_deploy.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slogging_deploy.html#instalacion">instalación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slogging_deploy.html#como-definir-php-registro-de-errores">¿Cómo definir php registro de errores</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slogging_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="snginxcontrol_deploy.html">Nginx Control</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="snginxcontrol_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxcontrol_deploy.html#ayuda-comando">Ayuda Comando</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxcontrol_deploy.html#comienzo">comienzo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxcontrol_deploy.html#detengase">Deténgase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxcontrol_deploy.html#reanudar">reanudar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxcontrol_deploy.html#recargar">recargar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxcontrol_deploy.html#parametro-alternativa">Parámetro Alternativa</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxcontrol_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="snginxsbeditor_deploy.html">NginxSBEditor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="snginxsbeditor_deploy.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxsbeditor_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxsbeditor_deploy.html#como-utilizar">Cómo utilizar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxsbeditor_deploy.html#add">Add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxsbeditor_deploy.html#remove">Remove</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxsbeditor_deploy.html#list">List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="snginxsbeditor_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sproject_deploy.html">Project</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sproject_deploy.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sproject_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sproject_deploy.html#container">Container</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sproject_deploy.html#init">init</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sproject_deploy.html#build-install">Build-Install</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sproject_deploy.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sproject_deploy.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sruncommand_deploy.html">Run Command</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sruncommand_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sruncommand_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sruncommand_deploy.html#como-usar-el-comando-ejecutar">Cómo usar el comando Ejecutar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sruncommand_deploy.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ssftp_deploy.html">SFTP</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ssftp_deploy.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssftp_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssftp_deploy.html#instalacion">Instalación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssftp_deploy.html#opciones">Opciones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssftp_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ssvn_deploy.html">SVN</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ssvn_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssvn_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssvn_deploy.html#como-utilizar-las-funciones-de-pago-y-envio">Cómo utilizar las funciones de pago y envío</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssvn_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_deploy.html">System Detection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ssystemdetection_deploy.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssystemdetection_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssystemdetection_deploy.html#detect">Detect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssystemdetection_deploy.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssystemdetection_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stemplating_deploy.html">Templating</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="stemplating_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stemplating_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stemplating_deploy.html#instalacion">instalación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stemplating_deploy.html#opcion">opción</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stemplating_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sversion_deploy.html">Version</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sversion_deploy.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sversion_deploy.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sversion_deploy.html#parametro-alternativa">parámetro Alternativa</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sversion_deploy.html#instalacion">instalación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sversion_deploy.html#opcion">opción</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sversion_deploy.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sbehat_test.html">Behat</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sbehat_test.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbehat_test.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbehat_test.html#como-inicializar-behat">Cómo inicializar Behat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbehat_test.html#como-ejecutar-el-behat">Cómo ejecutar el Behat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbehat_test.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="scucumber_test.html">Cucumber</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="scucumber_test.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scucumber_test.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scucumber_test.html#como-inicializar-pepino">Cómo inicializar pepino</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scucumber_test.html#como-ejecutar-el-pepino">Cómo ejecutar el pepino</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scucumber_test.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="senvironmentconfig_test.html">EnvironmentConfig</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="senvironmentconfig_test.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="senvironmentconfig_test.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="senvironmentconfig_test.html#como-configurar-el-entorno">Cómo configurar el entorno</a></li>
+<li class="toctree-l3"><a class="reference internal" href="senvironmentconfig_test.html#como-eliminar-la-configuracion-del-entorno">Cómo eliminar la configuración del entorno</a></li>
+<li class="toctree-l3"><a class="reference internal" href="senvironmentconfig_test.html#como-enumerar-configuracion-del-entorno">Cómo enumerar configuración del entorno</a></li>
+<li class="toctree-l3"><a class="reference internal" href="senvironmentconfig_test.html#alternative-parameters">Alternative Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="senvironmentconfig_test.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sphpunit_test.html">PhpUnit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sphpunit_test.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sphpunit_test.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sphpunit_test.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sphpunit_test.html#inicializar">inicializar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sphpunit_test.html#execute">Execute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sphpunit_test.html#opciones">Opciones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sphpunit_test.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="stemplating_test.html">Templating</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="stemplating_test.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stemplating_test.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stemplating_test.html#instalacion">instalación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stemplating_test.html#opciones">Opciones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stemplating_test.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ssystemdetection_test.html">SystemDetection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_test.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_test.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_test.html#detect">Detect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_test.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_test.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sautossh_virtualize.html">AutoSSH</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sautossh_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sautossh_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sautossh_virtualize.html#funciones-de-autossh">Funciones de autossh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sautossh_virtualize.html#cli">Cli</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sautossh_virtualize.html#sftp-put">Sftp_put</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sautossh_virtualize.html#sftp-get">Sftp_get</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sautossh_virtualize.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sautossh_virtualize.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sbox_virtualize.html">Box</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sbox_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbox_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbox_virtualize.html#funciones-de-ptvirtualize-caja">Funciones de ptvirtualize caja</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbox_virtualize.html#add">Add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbox_virtualize.html#remove">Remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbox_virtualize.html#package">Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbox_virtualize.html#list">List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbox_virtualize.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sbox_virtualize.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sdestroy_virtualize.html">Destroy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sdestroy_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sdestroy_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sdestroy_virtualize.html#como-destruir">Cómo destruir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sdestroy_virtualize.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sflirtify_virtualize.html">Flirtify</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sflirtify_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sflirtify_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sflirtify_virtualize.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sflirtify_virtualize.html#default-cleo">Default-cleo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sflirtify_virtualize.html#custom-cleo-dapper">Custom-cleo-dapper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sflirtify_virtualize.html#default-cleo-dapper">Default-cleo-dapper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sflirtify_virtualize.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="shalt_virtualize.html">Halt</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="shalt_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shalt_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shalt_virtualize.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shalt_virtualize.html#halt-por-nombre">Halt por nombre</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shalt_virtualize.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sinvoke_virtualize.html">Invoke</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sinvoke_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sinvoke_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sinvoke_virtualize.html#get">Get</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sinvoke_virtualize.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sinvoke_virtualize.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="spharaohtools_virtualize.html">PharaohTools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spharaohtools_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spharaohtools_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spharaohtools_virtualize.html#instalacion">instalación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spharaohtools_virtualize.html#asegurar">asegurar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spharaohtools_virtualize.html#ptdeploy">ptdeploy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spharaohtools_virtualize.html#pttest">pttest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spharaohtools_virtualize.html#jrush">Jrush</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spharaohtools_virtualize.html#opciones-adicionales">Opciones Adicionales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spharaohtools_virtualize.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sresume_virtualize.html">Resume</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sresume_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sresume_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sresume_virtualize.html#como-retomar-una-accion">Cómo retomar una acción</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sresume_virtualize.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ssftp_virtualize.html">SFTP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ssftp_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssftp_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssftp_virtualize.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssftp_virtualize.html#put">Put</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssftp_virtualize.html#get">Get</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssftp_virtualize.html#options">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssftp_virtualize.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sshell_virtualize.html">Shell</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sshell_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sshell_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sshell_virtualize.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sshell_virtualize.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sstatus_virtualize.html">Status</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sstatus_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sstatus_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sstatus_virtualize.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sstatus_virtualize.html#show">Show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sstatus_virtualize.html#full">Full</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sstatus_virtualize.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ssystemdetection_virtualize.html">SystemDetection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_virtualize.html#sinopsis">Sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_virtualize.html#detect">Detect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_virtualize.html#parametros-alternativos">parámetros alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ssystemdetection_virtualize.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sup_virtualize.html">Up</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sup_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sup_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sup_virtualize.html#funcionamiento-de-la-funcion">Funcionamiento de la función</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sup_virtualize.html#beneficios">Beneficios</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="svirtualbox_virtualize.html">Virtualbox</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="svirtualbox_virtualize.html#sinopsis">sinopsis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svirtualbox_virtualize.html#comando-ayuda">comando Ayuda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svirtualbox_virtualize.html#instalacion">Instalación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svirtualbox_virtualize.html#opciones">Opciones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svirtualbox_virtualize.html#beneficios">beneficios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/index.rst">
+          Pharaohtools Documentation
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

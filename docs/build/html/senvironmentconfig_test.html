@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>EnvironmentConfig &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTTest" href="spttest_main.html" />
+    <link rel="next" title="PhpUnit" href="sphpunit_test.html" />
+    <link rel="prev" title="Cucumber" href="scucumber_test.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">EnvironmentConfig</a><ul>
+<li><a class="reference internal" href="#sinopsis">sinopsis</a></li>
+<li><a class="reference internal" href="#comando-ayuda">comando Ayuda</a></li>
+<li><a class="reference internal" href="#como-configurar-el-entorno">Cómo configurar el entorno</a></li>
+<li><a class="reference internal" href="#como-eliminar-la-configuracion-del-entorno">Cómo eliminar la configuración del entorno</a></li>
+<li><a class="reference internal" href="#como-enumerar-configuracion-del-entorno">Cómo enumerar configuración del entorno</a></li>
+<li><a class="reference internal" href="#alternative-parameters">Alternative Parameters</a></li>
+<li><a class="reference internal" href="#beneficios">beneficios</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="scucumber_test.html"
+         title="Previous Chapter: Cucumber">&laquo; Cucumber</a></li>
+  <li><a href="sphpunit_test.html"
+         title="Next Chapter: PhpUnit">PhpUnit &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/senvironmentconfig_test.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+  <li><a href="http://testpage.readthedocs.org">English</a></li>
+   <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+     <li><a href="http://kevellfrench.readthedocs.org">spanish</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="environmentconfig">
+<h1>EnvironmentConfig<a class="headerlink" href="#environmentconfig" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sinopsis">
+<h2>sinopsis<a class="headerlink" href="#sinopsis" title="Permalink to this headline">¶</a></h2>
+<p>Este módulo facilita a los usuarios en la configuración de su entorno necesario para su proyecto. Veamos cómo configurar el entorno, cómo eliminar el ambiente no deseado, cómo utilizar la opción lista para enumerar los entornos disponibles en próximos temas.</p>
+</div>
+<div class="section" id="comando-ayuda">
+<h2>comando Ayuda<a class="headerlink" href="#comando-ayuda" title="Permalink to this headline">¶</a></h2>
+<p>El comando ayuda guía a los usuarios sobre la finalidad del módulo, sus parámetros alternativos que se utilizan en la declaración. Se destacan las tres funciones de la configuración del entorno que son lista, configurar, borrar. También especifica la sintaxis para utilizar tres funciones principales. A continuación se muestra la sintaxis utilizada para declarar la ayuda:</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure envconfig <span class="nb">help</span>
+</pre></div>
+</div>
+<p>La captura de pantalla siguiente muestra gráficamente sobre el funcionamiento del comando help.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure envconfig <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>is part of a default Module and provides you with a method by which you can
+ configure environments <span class="k">for </span>your project from the <span class="nb">command </span>line. Currently compliant with
+ both ptdeploy and ptconfigure.
+
+ EnvironmentConfig, environmentconfig, environment-config, envconfig, env-config
+
+       - list
+       List current environments
+       example: ptconfigure envconfig list --yes
+
+       - list-local
+       List current <span class="nb">local </span>environments
+       example: ptconfigure envconfig list-local --yes
+
+       - configure, config
+       Configure bespoke environments <span class="k">for </span>your project to use
+       example: ptconfigure envconfig config
+       <span class="c"># below to create an empty environment to add instances to</span>
+       example: ptconfigure envconfig config --yes
+                   --keep-current-environments <span class="c"># do not overwrite the current environments stored in papyrusfile</span>
+                   --no-manual-servers <span class="c"># so it will not ask you to interactively enter connection details of instances</span>
+                   --add-single-environment <span class="c"># otherwise it will loop for more until you specify not to</span>
+                   --environment-name<span class="o">=</span><span class="s2">&quot;some-name&quot;</span> <span class="c"># name of the environment to create</span>
+                   --tmp-dir<span class="o">=</span>/tmp/ <span class="c"># we&#39;re deprecating this soon</span>
+
+       - configure-default, config-default
+       Configure default environments <span class="k">for </span>your project to use
+       example: ptconfigure envconfig config-default
+       example: ptconfigure envconfig config-default --yes --environment-name<span class="o">=</span><span class="s2">&quot;local-80/local-8080&quot;</span>
+
+       - delete, del
+       Configure the environments <span class="k">for </span>your project to use
+       example: ptconfigure envconfig delete
+       example: ptconfigure envconfig del --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
+
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="como-configurar-el-entorno">
+<h2>Cómo configurar el entorno<a class="headerlink" href="#como-configurar-el-entorno" title="Permalink to this headline">¶</a></h2>
+<p>A fin de configurar el entorno, el usuario puede utilizar el siguiente comando:</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure envconfig config
+</pre></div>
+</div>
+<p>Después de introducir el comando sobre las siguientes operaciones lleva a cabo como se muestra:</p>
+<p>Step 1: Configure Environments Here? (Y/N)</p>
+<p>El usuario tiene que introducir Y o N.</p>
+<p>Step 2: Use existing environment Settings? (Y/N)</p>
+<p>El usuario tiene que introducir Y o N.</p>
+<p>Si el usuario de entrada y se procederá con la ya existente.</p>
+<p>Si de entrada como N, se pide información sobre el medio ambiente como</p>
+<p>Value for: Name of the environment</p>
+<p>Value for: Default temp dir(Location)</p>
+<p>Después de los pasos anteriores, el usuario tiene que introducir los siguientes datos:</p>
+<p>Enter target?</p>
+<p>Enter user?</p>
+<p>Enter password?</p>
+<p>Add Another Server? (Y/N)</p>
+<p>El usuario tiene que introducir Y o N.</p>
+<p>Por último, la configuración del entorno obtiene éxito como se muestra en la siguiente captura de pantalla.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure envconfig config
+Configure Environments Here? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+Environment 1  :
+Default Settings <span class="k">for </span>Any App not setup <span class="k">for </span>environment  enter them now.
+Value <span class="k">for</span>: Name of this Environment
+kevells
+Value <span class="k">for</span>: Default Temp Dir <span class="o">(</span>should usually be /tmp/<span class="o">)</span>
+
+Enter Servers - this is an array of entries
+Enter target ?
+/home/kevells
+Enter user ?
+kevells
+Value <span class="k">for</span>: Default Temp Dir <span class="o">(</span>should usually be /tmp/<span class="o">)</span>
+
+Enter Servers - this is an array of entries
+Enter target ?
+/home/kevells
+Enter user ?
+kevells
+Enter password ?
+123456
+Add Another Server? <span class="o">(</span>Y/N<span class="o">)</span>
+N
+******************************
+
+
+Success
+In Environment Configuration
+******************************
+</pre></div>
+</div>
+<p>Mientras configura un entorno, si el usuario desea configurar con el entorno actual, puede utilizar el siguiente comando:</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure envconfig config --keep-current-environments
+</pre></div>
+</div>
+<p>Después de introducir el comando anterior, se pide a los siguientes datos como se muestra en el formato tabular:</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="33%" />
+<col width="11%" />
+<col width="57%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">parámetros</th>
+<th class="head">opciones</th>
+<th class="head">comentarios</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Configure Environments Here? (Y/N)</td>
+<td>Y</td>
+<td>Si el usuario desea configurar los entornos en la corriente
+entorno en el que puede introducir como Y</td>
+</tr>
+<tr class="row-odd"><td>Configure Environments Here? (Y/N)</td>
+<td>N</td>
+<td>Si el usuario no desea configurar los entornos expuestos a
+entorno actual se puede introducir como N</td>
+</tr>
+<tr class="row-even"><td>Use existing environment
+settings? (Y/N)</td>
+<td>Y</td>
+<td>Si el usuario desea utilizar la configuración del entorno
+existentes se puede introducir como Y.</td>
+</tr>
+<tr class="row-odd"><td>Use existing environment
+settings? (Y/N)</td>
+<td>N</td>
+<td>Si el usuario no desea utilizar el entorno existente
+configuración que puede introducir como N.</td>
+</tr>
+<tr class="row-even"><td>Do you want to add another
+environment? (Y/N)</td>
+<td>Y</td>
+<td>Si el usuario desea agregar otro ambiente , que pueden
+de entrada como Y.</td>
+</tr>
+<tr class="row-odd"><td>Do you want to add another
+environment? (Y/N)</td>
+<td>N</td>
+<td>Si el usuario no desea añadir otro ambiente , que pueden
+de entrada como N.|</td>
+</tr>
+</tbody>
+</table>
+<p>La siguiente captura representa gráficamente el proceso antes mencionado:</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure envconfig config --keep-current-environments
+Configure Environments Here? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+Use existing environment settings? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+Do you want to add another environment? <span class="o">(</span>Y/N<span class="o">)</span>
+N
+******************************
+
+
+Success
+In Environment Configuration
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="como-eliminar-la-configuracion-del-entorno">
+<h2>Cómo eliminar la configuración del entorno<a class="headerlink" href="#como-eliminar-la-configuracion-del-entorno" title="Permalink to this headline">¶</a></h2>
+<p>Si el usuario necesita borrar la configuración del entorno, puede introducir el siguiente comando:</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+<p>ptconfigure envconfig del &#8211;environment-name=&#8221;kevells&#8221;</p>
+<p>El usuario puede especificar el nombre del medio ambiente que desean eliminar como se muestra arriba.</p>
+<p>Después de introducir el comando anterior, se preguntará</p>
+<p>Step 1: Delete Environments Here?</p>
+<p>y muestra una advertencia del mensaje como</p>
+<div class="highlight-bash"><div class="highlight"><pre>WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for </span>boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
+</pre></div>
+</div>
+<p>El usuario debe especificar Y o N</p>
+<p>Step 2: Environment Kevells(Name of the specified environment that is supposed to delete) found. Are you sure want to delete it? (Y/N)</p>
+<p>El usuario debe especificar Y o N</p>
+<p>Finalmente, el entorno especificado consigue eliminar como se muestra en la captura de pantalla.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure envconfig del --environment-name<span class="o">=</span><span class="s2">&quot;kevells&quot;</span>
+Delete Environments Here?
+WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for </span>boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+Environment kevells found. Are you sure you want to delete it? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Removing environment kevells.
+******************************
+
+
+Success
+In Environment Configuration
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="como-enumerar-configuracion-del-entorno">
+<h2>Cómo enumerar configuración del entorno<a class="headerlink" href="#como-enumerar-configuracion-del-entorno" title="Permalink to this headline">¶</a></h2>
+<p>Si el usuario desea ver la lista de los detalles sobre la configuración del entorno, puede introducir como se muestra:</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+<p>ptconfigure envconfig list &#8211;yes</p>
+<p>Después de introducir el comando anterior, mostrará la salida como se muestra en la captura de pantalla:</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure envconfig list --yes
+******************************
+
+
+array<span class="o">(</span>0<span class="o">)</span> <span class="o">{</span>
+<span class="o">}</span>
+
+In Environment Configuration
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameters">
+<h2>Alternative Parameters<a class="headerlink" href="#alternative-parameters" title="Permalink to this headline">¶</a></h2>
+<p>En lugar de envconfig los siguientes parámetros pueden utilizarse en la declaración:</p>
+<ul class="simple">
+<li>EnvironmentConfig</li>
+<li>environmentconfig</li>
+<li>environment-config</li>
+<li>env-config</li>
+</ul>
+</div>
+<div class="section" id="beneficios">
+<h2>beneficios<a class="headerlink" href="#beneficios" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Es acomodada en ambos OS ciento y así como en ubuntu.</li>
+<li>Los parámetros utilizados en la declaración no son mayúsculas y
+minúsculas que es una ventaja añadida mientras que comparado con otros. * Este módulo conduce a los usuarios cómo configurar el entorno, cómo
+eliminar el ambiente no deseado, cómo utilizar la opción lista para
+enumerar los ambientes disponibles.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/senvironmentconfig_test.rst">
+          EnvironmentConfig
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

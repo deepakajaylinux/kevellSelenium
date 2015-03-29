@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Apt &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="sptconfigure_main.html" />
+    <link rel="next" title="Aptana" href="saptana.html" />
+    <link rel="prev" title="ApacheVHostEditor" href="sapachevhosteditor.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Apt</a><ul>
+<li><a class="reference internal" href="#sinopsis">sinopsis</a></li>
+<li><a class="reference internal" href="#ayuda-comando">Ayuda Comando</a></li>
+<li><a class="reference internal" href="#diferentes-caracteristicas-de-apt">Diferentes características de Apt</a></li>
+<li><a class="reference internal" href="#crear">CREAR</a></li>
+<li><a class="reference internal" href="#retire">RETIRE</a></li>
+<li><a class="reference internal" href="#contrasena-set">CONTRASEÑA SET</a></li>
+<li><a class="reference internal" href="#existe">EXISTE</a></li>
+<li><a class="reference internal" href="#grupos-ver">GRUPOS VER</a></li>
+<li><a class="reference internal" href="#anadir-to-group">AÑADIR _TO_GROUP</a></li>
+<li><a class="reference internal" href="#remove-from-group">REMOVE_FROM_GROUP</a></li>
+<li><a class="reference internal" href="#parametros-alternativos">parámetros alternativos</a></li>
+<li><a class="reference internal" href="#beneficios">Beneficios</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="sapachevhosteditor.html"
+         title="Previous Chapter: ApacheVHostEditor">&laquo; ApacheVHostEdito...</a></li>
+  <li><a href="saptana.html"
+         title="Next Chapter: Aptana">Aptana &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/sapt.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+  <li><a href="http://testpage.readthedocs.org">English</a></li>
+   <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+     <li><a href="http://kevellfrench.readthedocs.org">spanish</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="apt">
+<h1>Apt<a class="headerlink" href="#apt" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sinopsis">
+<h2>sinopsis<a class="headerlink" href="#sinopsis" title="Permalink to this headline">¶</a></h2>
+<p>El principal objetivo de este módulo apto es crear nuevos apartamentos y así está destinada a modificar los apartamentos ya existentes. Este módulo tiene una colección de diversas características para acceder y modificar los apartamentos en función de los requerimientos de los usuarios.</p>
+<p>Los temas próximos ocupa de cómo utilizar este módulo y también sobre los diferentes aspectos de este módulo para acceder a apt.</p>
+</div>
+<div class="section" id="ayuda-comando">
+<h2>Ayuda Comando<a class="headerlink" href="#ayuda-comando" title="Permalink to this headline">¶</a></h2>
+<p>El comando de ayuda es un breve manual de usuario que facilita a los usuarios obtener conscientes en cuanto a la utilización de metodologías de manejo de este módulo para realizar diferentes funciones. También se enumeran las salidas de parámetros alternativos que se pueden utilizar en las declaraciones. Se destaca el ejemplo de sintaxis para el uso y acceso a diferentes funciones en virtud de Apt.</p>
+<p>El comando utilizado para la declaración de opción de ayuda en virtud de Apt se muestra a continuación,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Apt <span class="nb">help</span>
+</pre></div>
+</div>
+<p>La sintaxis para declarar el comando de ayuda no es sensible a mayúsculas, que es una ventaja añadida. La siguiente captura de pantalla a visualizar sobre el comando de ayuda bajo apt.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure apt <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>allows you to modify create or modify apts
+
+ Apt, apt
+
+       - create
+       Create a new system apt, overwriting <span class="k">if </span>it exists
+       example: ptconfigure apt create --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
+       - remove
+       Remove a system apt
+       example: ptconfigure apt remove --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
+       - <span class="nb">set</span>-password
+       Set the password of a system apt
+       example: ptconfigure apt <span class="nb">set</span>-password --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --new-password<span class="o">=</span><span class="s2">&quot;somepassword&quot;</span>
+
+       - exists
+       Check the existence of a apt
+       example: ptconfigure apt exists --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
+       - show-groups
+       Show groups to which a apt belongs
+       example: ptconfigure apt show-groups --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
+       - add-to-group
+       Add apt to a group
+       example: ptconfigure apt add-to-group --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+
+       - remove-from-group
+       Remove apt from a group
+       example: ptconfigure apt remove-from-group --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="diferentes-caracteristicas-de-apt">
+<h2>Diferentes características de Apt<a class="headerlink" href="#diferentes-caracteristicas-de-apt" title="Permalink to this headline">¶</a></h2>
+<p>En este tema se trata con diferentes características de apto en virtud de este módulo, así como las posibles formas de utilizar esas diversas características.</p>
+<p>Los diversos aspectos de este módulo bajo apt se enumeran a continuación,</p>
+<ul class="simple">
+<li>Crear</li>
+<li>Retire</li>
+<li>Configuración contraseña</li>
+<li>existe</li>
+<li>Show-grupos</li>
+<li>Add-to-grupo</li>
+<li>Quitar-de-grupo</li>
+</ul>
+</div>
+<div class="section" id="crear">
+<h2>CREAR<a class="headerlink" href="#crear" title="Permalink to this headline">¶</a></h2>
+<p>Esta función tiene como objetivo la creación de un nuevo sistema de apt, y al igual que sobrescribe en caso de que ya existe. Esta función de apt usando este módulo se puede lograr mediante la siguiente sintaxis,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure apt create --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
+</div>
+<p>En el lugar de aptname el usuario puede especificar el nombre de la APT que se va a crear. Después de introducir el comando como se especifica anteriormente, el nuevo sistema apt se creará con el nombre especificado.</p>
+</div>
+<div class="section" id="retire">
+<h2>RETIRE<a class="headerlink" href="#retire" title="Permalink to this headline">¶</a></h2>
+<p>Esta función tiene como objetivo la eliminación de un apt existente. Esta función de apt usando este módulo se puede lograr mediante la siguiente sintaxis,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure apt remove --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
+</div>
+<p>En el lugar de aptname el usuario puede especificar el nombre de los apartamentos que se va a eliminar. Después de introducir el comando como se especifica anteriormente, el apartamento especificado se eliminarán.</p>
+</div>
+<div class="section" id="contrasena-set">
+<h2>CONTRASEÑA SET<a class="headerlink" href="#contrasena-set" title="Permalink to this headline">¶</a></h2>
+<p>Esta función facilita el establecimiento de una nueva contraseña a un sistema apto según las necesidades. Esto se puede hacer mediante la aplicación del comando como se indica a continuación,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure apt <span class="nb">set</span>-password --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --new-password<span class="o">=</span><span class="s2">&quot;somepassword&quot;</span>
+</pre></div>
+</div>
+<p>Para llevar a cabo estas funciones, el usuario tiene que especificar los dos campos,</p>
+<ul class="simple">
+<li>Nombre Apt</li>
+<li>Nueva contraseña</li>
+</ul>
+<p>Después de especificar los dos campos en el formato de comando antes mencionado, se creará la nueva contraseña para el apt especificado.</p>
+</div>
+<div class="section" id="existe">
+<h2>EXISTE<a class="headerlink" href="#existe" title="Permalink to this headline">¶</a></h2>
+<p>Esta función tiene por objeto la comprobación de la existencia de un apt. Esto se puede hacer simplemente, mediante el comando de abajo,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure apt exists --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
+</div>
+<p>Después de aplicar el comando como el anterior, la existencia de un apt mencionados se garantizará con los resultados.</p>
+</div>
+<div class="section" id="grupos-ver">
+<h2>GRUPOS VER<a class="headerlink" href="#grupos-ver" title="Permalink to this headline">¶</a></h2>
+<p>Esta función ayuda a los usuarios a conocer a qué grupo pertenece a la APT. Esto se puede conseguir simplemente utilizando el siguiente comando,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure apt show-groups --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
+</div>
+<p>El usuario tiene que especificar el nombre de los apartamentos en el campo de aptname, con el fin de conocer los detalles de su grupo.</p>
+</div>
+<div class="section" id="anadir-to-group">
+<h2>AÑADIR _TO_GROUP<a class="headerlink" href="#anadir-to-group" title="Permalink to this headline">¶</a></h2>
+<p>El principal objetivo de esta función es añadir la necesaria apto para el grupo requerido por la simple aplicación de la orden como se indica a continuación,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure apt add-to-group --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+</pre></div>
+</div>
+<p>Para implementar esta función, el usuario tiene que especificar los dos campos siguientes de acuerdo a sus necesidades en el formato de la mencionada orden,</p>
+<ul class="simple">
+<li>Aptname</li>
+<li>Nombre del grupo</li>
+</ul>
+</div>
+<div class="section" id="remove-from-group">
+<h2>REMOVE_FROM_GROUP<a class="headerlink" href="#remove-from-group" title="Permalink to this headline">¶</a></h2>
+<p>El objetivo principal de esta función es eliminar el apartamento de un grupo simplemente aplicando el comando como se indica a continuación,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure apt remove-from-group --aptname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+</pre></div>
+</div>
+<p>Para implementar esta función, el usuario tiene que especificar los dos campos siguientes de acuerdo a sus necesidades en el formato de la mencionada orden,</p>
+<ul class="simple">
+<li>Aptname</li>
+<li>Nombre del grupo</li>
+</ul>
+</div>
+<div class="section" id="parametros-alternativos">
+<h2>parámetros alternativos<a class="headerlink" href="#parametros-alternativos" title="Permalink to this headline">¶</a></h2>
+<p>Los parámetros alternativos para este módulo, cualquiera de los cuales se pueden utilizar en la declaración es,</p>
+<ul class="simple">
+<li>Apt</li>
+<li>apt</li>
+</ul>
+</div>
+<div class="section" id="beneficios">
+<h2>Beneficios<a class="headerlink" href="#beneficios" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Los parámetros utilizados declarando ayuda y otras características diferentes de apt no distinguen entre mayúsculas y minúsculas.</li>
+<li>Es-acomodado tanto os Cent y así como en Ubuntu.</li>
+<li>El uso de este módulo, el usuario puede crear y, así como modificar el apartamento de acuerdo a sus necesidades.</li>
+<li>La existencia de un apartamento puede garantizarse en este módulo.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/sapt.rst">
+          Apt
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Awstats &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="sptconfigure_main.html" />
+    <link rel="next" title="Behat" href="sbehat.html" />
+    <link rel="prev" title="Autopilot" href="sautopilot.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Awstats</a><ul>
+<li><a class="reference internal" href="#sinopsis">sinopsis</a></li>
+<li><a class="reference internal" href="#ayuda-comando">Ayuda Comando</a></li>
+<li><a class="reference internal" href="#instalacion">Instalación</a></li>
+<li><a class="reference internal" href="#caracteristicas-del-awstats">Características del Awstats</a></li>
+<li><a class="reference internal" href="#requisitos-de-awstats">Requisitos de Awstats</a></li>
+<li><a class="reference internal" href="#beneficios">Beneficios</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="sautopilot.html"
+         title="Previous Chapter: Autopilot">&laquo; Autopilot</a></li>
+  <li><a href="sbehat.html"
+         title="Next Chapter: Behat">Behat &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/sawstats.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+  <li><a href="http://testpage.readthedocs.org">English</a></li>
+   <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+     <li><a href="http://kevellfrench.readthedocs.org">spanish</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="awstats">
+<h1>Awstats<a class="headerlink" href="#awstats" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sinopsis">
+<h2>sinopsis<a class="headerlink" href="#sinopsis" title="Permalink to this headline">¶</a></h2>
+<p>En este módulo se promueve la instalación de awstats, con la última versión. AWStats es un análisis web de código abierto herramienta de informes, adecuadas para el análisis de datos de los servicios de Internet como web, los servidores con los medios de comunicación, electrónico y FTP. AWStats analiza y analiza los archivos de registro del servidor, la elaboración de informes HTML.</p>
+<p>AWStats (Advanced Web Statistics) es un potente analizador de archivo de registro del servidor web, con todas las funciones que te muestra todas las estadísticas de su web incluyendo: visitantes, páginas, golpea, hora, motores de búsqueda, palabras clave utilizadas para encontrar su sitio, enlaces rotos, robots y muchos más.</p>
+<p>Veamos, los detalles de cómo instalar este awstats, las características y requisitos de awstats en los próximos temas.</p>
+</div>
+<div class="section" id="ayuda-comando">
+<h2>Ayuda Comando<a class="headerlink" href="#ayuda-comando" title="Permalink to this headline">¶</a></h2>
+<p>El comando help guía a los usuarios en cuanto a la finalidad y al igual que sobre las opciones que se incluyen en el módulo AWStats. En él se enumeran los parámetros alternativos de módulo AWStats. También describe la sintaxis para instalar el módulo AWStats. El comando de ayuda para el módulo AWStats se muestra a continuación.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWStats <span class="nb">help</span>
+</pre></div>
+</div>
+<p>La sintaxis para declarar el comando de ayuda no es sensible a mayúsculas, que es una ventaja añadida. La siguiente captura de pantalla a visualizar sobre el comando de ayuda bajo AWStats.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure AWStats <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>allows you to update AWStats.
+
+ AWStats, Awstats, awstats
+
+       - install
+       Installs the latest version of awstats
+       example: ptconfigure awstats install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="instalacion">
+<h2>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline">¶</a></h2>
+<p>El comando que se utiliza para la instalación de los AWStats a la máquina de los usuarios se muestra a continuación.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWStats install
+</pre></div>
+</div>
+<p>Después de introducir el comando anterior, el siguiente proceso se produce como se muestra en el formato tabular.</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="21%" />
+<col width="33%" />
+<col width="12%" />
+<col width="34%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parámetros</th>
+<th class="head">parámetros alternativos</th>
+<th class="head">Necesario</th>
+<th class="head">Comentario</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Install AWStats? (Y/N)</td>
+<td>En lugar de AWStats, podemos
+utilizar Awstats, awstats también.</td>
+<td>Y(Yes)</td>
+<td>Si el usuario desea continuar el
+proceso de instalación se puede
+introducir como Y.</td>
+</tr>
+<tr class="row-odd"><td>Install AWStats? (Y/N)</td>
+<td>En lugar de AWStats, podemos
+utilizar Awstats, awstats también.</td>
+<td>N(No)</td>
+<td>Si el usuario desea abandonar el
+proceso de instalación se puede
+introducir como N.|</td>
+</tr>
+</tbody>
+</table>
+<p>Si el usuario continúa la instalación, el siguiente proceso están involucrados durante la instalación:</p>
+<ul class="simple">
+<li>Lee la lista de paquetes.</li>
+<li>Construye el árbol de dependencias.</li>
+<li>Instala los paquetes adicionales necesarios</li>
+<li>Instala los paquetes sugeridos.</li>
+<li>Instala los nuevos paquetes.</li>
+</ul>
+<p>Por último, la instalación de Awstats se completó con éxito como se muestra en las siguientes capturas de pantalla</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure awstats install
+Install AWStats? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+*******************************
+*        Pharaoh Tools        *
+*         AWStats!        *
+*******************************
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+ libnet-xwhois-perl
+Suggested packages:
+ libgeo-ipfree-perl
+The following NEW packages will be installed:
+ awstats libnet-xwhois-perl
+0 upgraded, 2 newly installed, 0 to remove and 182 not upgraded.
+Need to get 799 kB of archives.
+After this operation, 3,311 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/main awstats all 7.2+dfsg-1 <span class="o">[</span>778 kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/main libnet-xwhois-perl all 0.90-4 <span class="o">[</span>21.0 kB<span class="o">]</span>
+Fetched 799 kB in 12s <span class="o">(</span>65.2 kB/s<span class="o">)</span>
+Selecting previously unselected package awstats.
+<span class="o">(</span>Reading database ... 199987 files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../awstats_7.2+dfsg-1_all.deb ...
+Unpacking awstats <span class="o">(</span>7.2+dfsg-1<span class="o">)</span> ...
+Selecting previously unselected package libnet-xwhois-perl.
+Preparing to unpack .../libnet-xwhois-perl_0.90-4_all.deb ...
+Unpacking libnet-xwhois-perl <span class="o">(</span>0.90-4<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>doc-base <span class="o">(</span>0.10.5<span class="o">)</span> ...
+Processing 1 added doc-base file...
+Setting up awstats <span class="o">(</span>7.2+dfsg-1<span class="o">)</span> ...
+Setting up libnet-xwhois-perl <span class="o">(</span>0.90-4<span class="o">)</span> ...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package awstats from the Packager Apt executed correctly
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+AWStats: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="caracteristicas-del-awstats">
+<h2>Características del Awstats<a class="headerlink" href="#caracteristicas-del-awstats" title="Permalink to this headline">¶</a></h2>
+<p>Un análisis del registro completo permite AWStats para mostrarles la siguiente información:</p>
+<ul class="simple">
+<li>Número de visitas y de visitantes únicos</li>
+<li>Duración de las visitas y la última visita</li>
+<li>Los usuarios autenticados y últimas visitas autenticados</li>
+<li>Días de la semana y la hora punta (páginas, hits, KB por cada día y hora)</li>
+<li>Dominios / Países de anfitriones de los visitantes (páginas, hits, KB)</li>
+<li>Lista de los Ejércitos, últimas visitas y direcciones IP no resueltas lista</li>
+<li>Páginas más vistas, de entrada y salida</li>
+<li>Tipos de archivo</li>
+<li>Estadísticas de compresión Web (por mod_gzip o mod_deflate)</li>
+<li>Los navegadores utilizados (páginas, hits, kb para cada navegador)</li>
+<li>OS utilizado (páginas, hits, KB para cada sistema operativo)</li>
+<li>Visitas Robot</li>
+<li>Ataques de Gusanos</li>
+<li>Descargar y continuación de detección</li>
+<li>Los motores de búsqueda, frases y palabras clave utilizadas para encontrar su sitio</li>
+<li>Errores HTTP (Página no encontrada con el último árbitro, etc,)</li>
+<li>Informe de tamaño de pantalla</li>
+<li>Número de veces que su sitio está &#8220;añadido a favoritos marcadores&#8221;</li>
+<li>Relación de los navegadores que soporten: Java, Flash, lector RealG2,</li>
+</ul>
+<p>&nbsp; Lector Quicktime, lector WMA, lector de PDF
+* Informe de Cluster para carga relación servidores equilibrada
+* Otros informes personalizados ...</p>
+<p>Es compatible con las siguientes características, así:</p>
+<ul class="simple">
+<li>Puede analizar todos los formatos de registro</li>
+<li>Obras de línea de comandos y desde un navegador como CGI (con dinámica</li>
+</ul>
+<p>&nbsp; filtros capacidades para algunos gráficos)
+* Actualización de las estadísticas se puede hacer en la demanda de la interfaz web y
+&nbsp; no sólo de su planificador
+* Sin límite de tamaño de archivo de registro, archivos de registro de soporte de división (sistema de balanceo de carga)
+* Soporte &#8216;casi ordenados&#8217; los archivos de registro, incluso para las páginas de entrada y salida
+* Invertir búsqueda DNS antes o durante el análisis, soporta archivos de caché de DNS
+* Detección País de localización de IP o nombre de dominio
+* Enlaces Whois
+* Una gran cantidad de opciones / filtros y plugins se puede utilizar Sitios web
+* Multi-nombradas soportados (servidores virtuales)
+* Cross Site Scripting Ataques protección
+* Varios idiomas
+* No hay necesidad de bibliotecas Perl raras
+* Informes dinámicos como resultado del CGI Informes
+* Estática en una o enmarcado HTML o XHTML
+* Experimental de exportación a PDF
+* Ver y colores pueden coincidir con el diseño del sitio (CSS)
+* Ayuda y sugerencias en HTML informaron páginas
+* Fácil de usar (sólo un archivo de configuración para editar)
+* Análisis de la base de datos se puede almacenar en formato XML (para el procesamiento de XSLT, ...)
+* Un módulo Webmin
+* Libre (GNU GPL) con fuentes (los scripts de Perl)
+* Disponible en todas las plataformas</p>
+</div>
+<div class="section" id="requisitos-de-awstats">
+<h2>Requisitos de Awstats<a class="headerlink" href="#requisitos-de-awstats" title="Permalink to this headline">¶</a></h2>
+<p>Para usar AWStats script CGI, son necesarios los siguientes requisitos:</p>
+<ul class="simple">
+<li>El servidor debe registrar el acceso web en un archivo de registro se puede leer.</li>
+<li>Para ejecutar awstats, desde la línea de comandos, el sistema operativo debe ser capaz</li>
+</ul>
+<p>&nbsp; Para ejecutar scripts (archivos .pl) perl.
+* Perl módulo &#8220;Encode&#8221; debe estar disponible.</p>
+<p>Para ejecutar awstats como un CGI (por estadísticas en tiempo real), el servidor web también debe ser capaz de ejecutar dichos scripts.</p>
+<blockquote>
+<div><p>Si no, puede resolver este descargando la última versión de Perl en:</p>
+<p><a class="reference external" href="http://www.activestate.com/ActivePerl/">http://www.activestate.com/ActivePerl/</a> (Windows)</p>
+<p><a class="reference external" href="http://www.perl.com/pub/language/info/software.html">http://www.perl.com/pub/language/info/software.html</a> (All OS)</p>
+</div></blockquote>
+</div>
+<div class="section" id="beneficios">
+<h2>Beneficios<a class="headerlink" href="#beneficios" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Los parámetros utilizados en ayuda y de instalación y desinstalación operaciones no son sensibles, que es una ventaja añadida, mientras que
+en comparación con otros.</li>
+<li>Es-acomodados tanto en Ubuntu y así como Cent OS.</li>
+<li>Este módulo se instala los Awstats en versión actualizada.</li>
+<li>Si el módulo ya existe en la máquina del usuario, se mostrará un mensaje, ya que ya existe.</li>
+<li>AWStats soporta la mayoría de los principales formatos de archivos de registro del servidor web, incluyendo (/ XLF / formato de registro ELF
+NCSA combinado o Formato Común de Registro (CLF)) Apache,</li>
+</ul>
+<p>&nbsp;&nbsp;WebStar, IIS (formato de registro W3C), y muchos otros formatos de registro del servidor web común.
+* Los desarrolladores pueden contribuir al proyecto AWStats través de SourceForge.net.
+* Escrito en Perl, AWStats se pueden implementar en casi cualquier sistema operativo
+* Se trata de una herramienta de administración de servidores, con los paquetes disponibles para la mayoría de las distribuciones de Linux.</p>
+<ul class="simple">
+<li>AWStats se pueden instalar en una estación de trabajo, tales como MS Windows, para uso local en situaciones en que los archivos de registro
+se puede descargar desde un servidor remoto.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/sawstats.rst">
+          Awstats
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

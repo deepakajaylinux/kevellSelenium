@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Firewall &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="sptconfigure_main.html" />
+    <link rel="next" title="Gem" href="sgem.html" />
+    <link rel="prev" title="FireFox33" href="sfirefox33.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Firewall</a><ul>
+<li><a class="reference internal" href="#sinopsis">sinopsis</a></li>
+<li><a class="reference internal" href="#comando-ayuda">comando Ayuda</a></li>
+<li><a class="reference internal" href="#opciones">Opciones</a></li>
+<li><a class="reference internal" href="#beneficios">Beneficios</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="sfirefox33.html"
+         title="Previous Chapter: FireFox33">&laquo; FireFox33</a></li>
+  <li><a href="sgem.html"
+         title="Next Chapter: Gem">Gem &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/sfirewall.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+  <li><a href="http://testpage.readthedocs.org">English</a></li>
+   <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+     <li><a href="http://kevellfrench.readthedocs.org">spanish</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="firewall">
+<h1>Firewall<a class="headerlink" href="#firewall" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sinopsis">
+<h2>sinopsis<a class="headerlink" href="#sinopsis" title="Permalink to this headline">¶</a></h2>
+<p>Un firewall es un sistema de seguridad de la red que controla el tráfico de red entrante y saliente en base a un conjunto de reglas aplicadas. Existen Firewalls tanto como una solución de software y como un dispositivo de hardware.</p>
+</div>
+<div class="section" id="comando-ayuda">
+<h2>comando Ayuda<a class="headerlink" href="#comando-ayuda" title="Permalink to this headline">¶</a></h2>
+<p>Este comando ayuda ayudar al usuario acerca de Ptconfigure. Guía al usuario permiso.</p>
+<p>El usuario puede hacer la modificación según el deseo. Ayuda imagen guiará al usuario. Vamos a visualizar la misma.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Firewall <span class="nb">help</span>
+</pre></div>
+</div>
+<p>La captura de pantalla para el comando anterior se enumeran a continuación,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Firewall <span class="nb">help</span>
+******************************
+This <span class="nb">command </span>allows you to modify create or modify firewalls
+
+ Firewall, firewall
+
+       - <span class="nb">enable</span>
+<span class="nb">       </span>Enable system firewall
+       example: ptconfigure firewall <span class="nb">enable</span>
+
+       - disable
+       Disable system firewall
+       example: ptconfigure firewall disable
+
+       - allow
+       Allow a Firewall rule
+       example: ptconfigure firewall allow --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - deny
+       Deny a Firewall rule. Allow connection attempts to be ignored and <span class="nb">time </span>out.
+       example: ptconfigure firewall deny --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - reject
+       Reject a Firewall rule. Terminate connections attempts with an error to the connector.
+       example: ptconfigure firewall reject --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - limit
+       Limit a Firewall rule. ufw will deny connections <span class="k">if </span>an IP address has attempted
+       to initiate 6 or more connections in the last 30 seconds.
+       example: ptconfigure firewall limit --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - delete
+       Delete a Firewall rule.
+       example: ptconfigure firewall delete --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - insert
+       Insert a Firewall rule.
+       example: ptconfigure firewall insert --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - reset
+       Reset a Firewall rule.
+       example: ptconfigure firewall reset --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - default
+       Set default policy, should be allow, deny, or reject
+       example: ptconfigure firewall default --policy<span class="o">=</span><span class="s2">&quot;deny&quot;</span>
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="opciones">
+<h2>Opciones<a class="headerlink" href="#opciones" title="Permalink to this headline">¶</a></h2>
+<p>Reglas Firewalls se pueden personalizar según sus necesidades, requisitos y niveles de amenaza de seguridad. El usuario puede crear o desactivar reglas de firewall basado en condiciones tales como:</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="18%" />
+<col width="49%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">parámetros</th>
+<th class="head">función</th>
+<th class="head">comentario</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>IP address</td>
+<td>El bloqueo de una determinada dirección IP o un rango de
+direcciones IP, lo que usted piensa es depredadora</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Enable</td>
+<td>Habilitar firewall del sistema</td>
+<td>Ptconfigure firewall enable</td>
+</tr>
+<tr class="row-even"><td>Disable</td>
+<td>Firewall del sistema Desactivar</td>
+<td>Ptconfigure firewall disable</td>
+</tr>
+<tr class="row-odd"><td>Allow</td>
+<td>Permitir regla de firewall</td>
+<td>Ptconfigure firewall allow –firewall-
+rule=”ssh/tcp”</td>
+</tr>
+<tr class="row-even"><td>Deny</td>
+<td>Permitir intento de conexión que se ignora y el tiempo
+de espera</td>
+<td>Ptconfigure firewall deny –firewall-
+rule=”ssh/tcp”</td>
+</tr>
+<tr class="row-odd"><td>Reject</td>
+<td>Terminar los intentos de conexión con un error al
+conector</td>
+<td>Ptconfigure firewall reject –firewall-
+rule=”ssh/tcp”</td>
+</tr>
+<tr class="row-even"><td>Limit</td>
+<td>Ufw negará conexiones si una dirección IP tiene 6 o
+iniciar intentó más conexión en los últimos 30 segundos.</td>
+<td>Ptconfigure firewall limit –firewall-
+rule=”ssh/tcp”</td>
+</tr>
+<tr class="row-odd"><td>Delete</td>
+<td>Eliminar una regla de firewall</td>
+<td>Ptconfigure firewall delete –firewall-
+rule=”ssh/tcp”</td>
+</tr>
+<tr class="row-even"><td>Insert</td>
+<td>Inserte una regla de firewall</td>
+<td>Ptconfigure firewall insert –firewall-
+rule=”ssh/tcp”</td>
+</tr>
+<tr class="row-odd"><td>Reset</td>
+<td>Cambiar una regla de firewall</td>
+<td>Ptconfigure firewall reset –firewall-
+rule=”ssh/tcp”</td>
+</tr>
+<tr class="row-even"><td>default</td>
+<td>Política predeterminada, debe ser permitir, denegar o
+rechazar.</td>
+<td>Ptconfigure firewall default –
+policy=”deny”|</td>
+</tr>
+</tbody>
+</table>
+<p>La representación gráfica para el comando allow, deny , rechazar y restablecimiento se enumeran a continuación ,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure firewall allow --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+Rules updated
+Rules updated <span class="o">(</span>v6<span class="o">)</span>
+******************************
+
+
+Firewall Modifications:
+--------------------------------------------
+
+Firewall: Success
+
+------------------------------
+Firewall Mods Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure firewall deny --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+
+Skipping adding existing rule
+Skipping adding existing rule <span class="o">(</span>v6<span class="o">)</span>
+******************************
+
+
+Firewall Modifications:
+--------------------------------------------
+
+Firewall: Success
+
+------------------------------
+Firewall Mods Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure firewall reject --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+Rules updated
+Rules updated <span class="o">(</span>v6<span class="o">)</span>
+******************************
+
+
+Firewall Modifications:
+--------------------------------------------
+
+Firewall: Success
+
+------------------------------
+Firewall Mods Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure firewall reset --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+Resetting all rules to installed defaults. Proceed with operation <span class="o">(</span>y|n<span class="o">)</span>? Backing up <span class="s1">&#39;user.rules&#39;</span> to <span class="s1">&#39;/lib/ufw/user.rules.20150324_190113&#39;</span>
+Backing up <span class="s1">&#39;after.rules&#39;</span> to <span class="s1">&#39;/etc/ufw/after.rules.20150324_190113&#39;</span>
+Backing up <span class="s1">&#39;after6.rules&#39;</span> to <span class="s1">&#39;/etc/ufw/after6.rules.20150324_190113&#39;</span>
+Backing up <span class="s1">&#39;before6.rules&#39;</span> to <span class="s1">&#39;/etc/ufw/before6.rules.20150324_190113&#39;</span>
+Backing up <span class="s1">&#39;user6.rules&#39;</span> to <span class="s1">&#39;/lib/ufw/user6.rules.20150324_190113&#39;</span>
+Backing up <span class="s1">&#39;before.rules&#39;</span> to <span class="s1">&#39;/etc/ufw/before.rules.20150324_190113&#39;</span>
+
+******************************
+
+
+Firewall Modifications:
+--------------------------------------------
+
+Firewall: Success
+
+------------------------------
+Firewall Mods Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="beneficios">
+<h2>Beneficios<a class="headerlink" href="#beneficios" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>El servidor de seguridad impide el acceso no deseado al sistema a través de una conexión de red mediante la identificación y prevención de
+comunicación a través de los puertos de riesgo.</li>
+<li>Sistema de comunicarse a través de muchos puertos reconocidos diferentes, y el servidor de seguridad tiende a permitir que estos sin
+preguntar o alertar al usuario.</li>
+<li>Los firewalls también pueden detectar la actividad &#8220;sospechosa&#8221; desde el exterior.</li>
+<li>El usuario puede configurar su dominio de acuerdo a su deseo.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/sfirewall.rst">
+          Firewall
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

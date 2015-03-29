@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Host Editor &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTDeploy" href="sptdeploy_main.html" />
+    <link rel="next" title="Invoke" href="sinvoke_deploy.html" />
+    <link rel="prev" title="Grafana" href="sgrafana_deploy.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Host Editor</a><ul>
+<li><a class="reference internal" href="#sinopsis">sinopsis</a></li>
+<li><a class="reference internal" href="#comando-ayuda">comando Ayuda</a></li>
+<li><a class="reference internal" href="#parametros-alternativos">parámetros alternativos</a></li>
+<li><a class="reference internal" href="#add">Add</a></li>
+<li><a class="reference internal" href="#quitar">quitar</a></li>
+<li><a class="reference internal" href="#beneficios">beneficios</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="sgrafana_deploy.html"
+         title="Previous Chapter: Grafana">&laquo; Grafana</a></li>
+  <li><a href="sinvoke_deploy.html"
+         title="Next Chapter: Invoke">Invoke &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/shosteditor_deploy.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+  <li><a href="http://testpage.readthedocs.org">English</a></li>
+   <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+     <li><a href="http://kevellfrench.readthedocs.org">spanish</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sjrush_main.html">Jrush</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="sptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="host-editor">
+<h1>Host Editor<a class="headerlink" href="#host-editor" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sinopsis">
+<h2>sinopsis<a class="headerlink" href="#sinopsis" title="Permalink to this headline">¶</a></h2>
+<p>Este módulo soporta para manejar Apache Virtual Host Editor bajo ptdeploy. Puede funcionar de dos maneras. Ellos son añadir y quitar. Vhost Editor es una herramienta de PHP para hacer agregar hosts virtuales en apache una brisa. Vhost Editor le permitirá al usuario añadir, editar o eliminar la información Virtual Host de servidor Web del usuario. Es conveniente trabajar con Ubuntu y ciento OS.  Vamos a ver cómo los apaches Vhost Editor pueden funcionar bajo ptdeploy.</p>
+</div>
+<div class="section" id="comando-ayuda">
+<h2>comando Ayuda<a class="headerlink" href="#comando-ayuda" title="Permalink to this headline">¶</a></h2>
+<p>Este comando ayuda guía al usuario para crear un hosteditor. A continuación se muestra el comando de ayuda para Hosteditor.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy Hosteditor <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Después de entradas el comando anterior, comienza funcionamiento para agregar un editor de host virtual. Lo catequesis las funciones en las capturas de pantalla.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy HostEditor <span class="nb">help</span>
+
+******************************
+
+ This <span class="nb">command </span>is part of Default Modules and handles Host File Management Functions.
+
+ HostEditor, hosteditor, he, hostEditor
+
+         - add
+         add a Host File entry
+         example: ptdeploy hosteditor add
+         example: ptdeploy hosteditor add --yes
+             --host-ip<span class="o">=</span>127.0.0.1  <span class="c"># guess will assume 127.0.0.1</span>
+             --host-name<span class="o">=</span>dave.com
+
+         - rm
+         remove a Host File entry
+         example: ptdeploy hosteditor rm
+         example: ptdeploy hosteditor rm --yes
+             --host-ip<span class="o">=</span>127.0.0.1 <span class="c"># guess will ignore this, and remove any entry matching the host name</span>
+             --host-name<span class="o">=</span>dave.com
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="parametros-alternativos">
+<h2>parámetros alternativos<a class="headerlink" href="#parametros-alternativos" title="Permalink to this headline">¶</a></h2>
+<p>Los siguientes son los parámetros alternativos que pueden definirse en declaraciones:</p>
+<p>HostEditor, hosteditor, he, hostEditor</p>
+</div>
+<div class="section" id="add">
+<h2>Add<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h2>
+<p>Esto facilita el usuario para crear un host editor. El usuario puede escribir según su deseo.</p>
+<div class="highlight-bash"><div class="highlight"><pre>sudo ptdeploy hosteditor add
+</pre></div>
+</div>
+<p>Después de entrada como el comando anterior, el usuario puede llenar el siguiente proceso.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy hosteditor add
+
+Do you want to add a hosts file entry? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Do you want a non-default IP? Enter <span class="k">for </span>127.0.0.1
+127.0.0.1
+What URI <span class="k">do </span>you want to affect to the hostfile?
+karuna
+Please check host file: 127.0.0.1      localhost
+127.0.1.1      karuna
+127.0.1.1       www.kevell.com
+
+127.0.1.1      www.ptbuild.tld
+<span class="c"># The following lines are desirable for IPv6 capable hosts</span>
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+             --host-ip<span class="o">=</span>127.0.0.1  <span class="c"># guess will assume 127.0.0.1              --host-name=dave.com127.0.0.1          dave.com</span>
+127.0.0.1          dave.com
+192.168.1.4
+127.0.0.1          deepak
+clear
+127.0.0.1          www.kevell.com
+127.0.0.1
+127.0.0.1          karuna
+
+
+Is this Okay?  <span class="o">(</span>Y/N<span class="o">)</span>
+y
+******************************
+
+1Host Editor Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy hosteditor add --yes
+
+Do you want a non-default IP? Enter <span class="k">for </span>127.0.0.1
+127.0.0.1
+What URI <span class="k">do </span>you want to affect to the hostfile?
+kumar
+******************************
+
+1Host Editor Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="quitar">
+<h2>quitar<a class="headerlink" href="#quitar" title="Permalink to this headline">¶</a></h2>
+<p>El comando en el terminal para eliminar hosteditor es rm. El formato general de este comando es rm. RM quita un host si se especifica una ruta de acceso correcta para él y si no, entonces se muestra un mensaje de error y pasar al siguiente anfitrión.</p>
+<p>El siguiente comando utilizado para borrar el host virtual.</p>
+<div class="highlight-bash"><div class="highlight"><pre>sudo ptdeploy hosteditor rm
+</pre></div>
+</div>
+<p>La siguiente captura de pantalla puede explicar sus funciones.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy hosteditor rm
+
+Do you want to remove a hosts file entry? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Do you want a non-default IP? Enter <span class="k">for </span>127.0.0.1
+127.0.0.1
+What URI <span class="k">do </span>you want to affect to the hostfile?
+karuna
+Please check host file: 127.0.0.1      localhost
+127.0.1.1      karuna
+127.0.1.1       www.kevell.com
+
+127.0.1.1      www.ptbuild.tld
+<span class="c"># The following lines are desirable for IPv6 capable hosts</span>
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+             --host-ip<span class="o">=</span>127.0.0.1  <span class="c"># guess will assume 127.0.0.1              --host-name=dave.com127.0.0.1          dave.com</span>
+127.0.0.1          dave.com
+192.168.1.4
+127.0.0.1          deepak
+clear
+127.0.0.1          www.kevell.com
+127.0.0.1
+127.0.0.1          nithin
+127.0.0.1          kumar
+
+
+
+Is this Okay?  <span class="o">(</span>Y/N<span class="o">)</span>
+y
+******************************
+
+1Host Editor Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy hosteditor rm --yes
+
+Do you want a non-default IP? Enter <span class="k">for </span>127.0.0.1
+127.0.0.1
+What URI <span class="k">do </span>you want to affect to the hostfile?
+nithin
+******************************
+
+1Host Editor Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="beneficios">
+<h2>beneficios<a class="headerlink" href="#beneficios" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Multi usuario puede acceder a la vez.</li>
+<li>El usuario puede agregar o quitar host.</li>
+<li>No minúsculas.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/shosteditor_deploy.rst">
+          Host Editor
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>
