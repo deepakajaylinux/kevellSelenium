@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Kevells Selenium Documentation &mdash; KEVELLS 0.1 documentation</title>
+    <title>Selenium &mdash; KEVELLS 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -30,8 +30,8 @@
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="KEVELLS 0.1 documentation" href="#" />
-    <link rel="next" title="Selenium" href="selinum.html" />
+    <link rel="top" title="KEVELLS 0.1 documentation" href="index.html" />
+    <link rel="prev" title="Kevells Selenium Documentation" href="index.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -63,7 +63,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">KEVELLS</a>
+        <a class="navbar-brand" href="index.html">KEVELLS</a>
 <!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
       </div>
 
@@ -73,12 +73,12 @@
             
             
               <li class="dropdown globaltoc-container">
-  <a href="#"
+  <a href="index.html"
      class="dropdown-toggle"
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
-    ><ul>
-<li class="toctree-l1"><a class="reference internal" href="selinum.html">Selenium</a></li>
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Selenium</a></li>
 </ul>
 </ul>
 </li>
@@ -86,8 +86,14 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Kevells Selenium Documentation</a><ul>
-<li><a class="reference internal" href="#commands">Commands</a></li>
+<li><a class="reference internal" href="#">Selenium</a><ul>
+<li><a class="reference internal" href="#selenium-components">Selenium components</a></li>
+<li><a class="reference internal" href="#record-playback-mode-selenium-ide">Record-Playback mode (Selenium IDE)</a></li>
+<li><a class="reference internal" href="#installing-selenium-ide">Installing Selenium IDE</a><ul>
+<li><a class="reference internal" href="#pre-requisite">Pre Requisite:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#record-sample-script-in-selenium-ide">Record sample script in Selenium IDE</a></li>
 </ul>
 </li>
 </ul>
@@ -98,8 +104,8 @@
             
               
                 
-  <li><a href="selinum.html"
-         title="Next Chapter: Selenium">Selenium &raquo;</a></li>
+  <li><a href="index.html"
+         title="Previous Chapter: Kevells Selenium Documentation">&laquo; Kevells Selenium...</a></li>
               
             
             
@@ -107,7 +113,7 @@
             
 <!--              <li>
 <div id="sourcelink">
-  <a href="_sources/index.txt"
+  <a href="_sources/selinum.txt"
      rel="nofollow">Source</a>
 </div></li>-->
             
@@ -130,8 +136,8 @@
 <div class="container">
   <div class="row">
       <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="selinum.html">Selenium</a></li>
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Selenium</a></li>
 </ul>
 </ul>
 
@@ -140,21 +146,52 @@
     <div class="col-md-9">
       
   
-  <div class="section" id="kevells-selenium-documentation">
-<h1>Kevells Selenium Documentation<a class="headerlink" href="#kevells-selenium-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="commands">
-<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="selinum.html">Selenium</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="selinum.html#selenium-components">Selenium components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="selinum.html#record-playback-mode-selenium-ide">Record-Playback mode (Selenium IDE)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="selinum.html#installing-selenium-ide">Installing Selenium IDE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="selinum.html#record-sample-script-in-selenium-ide">Record sample script in Selenium IDE</a></li>
-</ul>
-</li>
+  <div class="section" id="selenium">
+<h1>Selenium<a class="headerlink" href="#selenium" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div>Selenium is a browser automation tool that is used for automating web based applications.  The tests can be written as HTML tables or coded in a number of popular programming languages and can be directly in most modern web browsers. Selenium is a javascript framework that runs in your browser. Selenium is used for UAT (User Acceptance Test).</div></blockquote>
+<div class="section" id="selenium-components">
+<h2>Selenium components<a class="headerlink" href="#selenium-components" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>There are four variants of selenium, which can be used in combination to create complete automation suite for your web applications.</div></blockquote>
+<p>Selenium IDE - Recording/ Creating and Enhancing scripts
+Selenium Remote Control (RC) - Executing scripts
+Selenium Web Driver - Cross browser testing
+Selenium Grid - Cross platform testing</p>
+</div>
+<div class="section" id="record-playback-mode-selenium-ide">
+<h2>Record-Playback mode (Selenium IDE)<a class="headerlink" href="#record-playback-mode-selenium-ide" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>Selenium IDE is used to record the test scenarios in terms of test cases in firefox. A Firefox plugin that lets you quickly create tests using a ‘record’ function that builds it out of your clicks, lets you manually edit to make your tests more complex, and runs them in Firefox.</div></blockquote>
+</div>
+<div class="section" id="installing-selenium-ide">
+<h2>Installing Selenium IDE<a class="headerlink" href="#installing-selenium-ide" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pre-requisite">
+<h3>Pre Requisite:<a class="headerlink" href="#pre-requisite" title="Permalink to this headline">¶</a></h3>
+<p>Install the firefox browser from Mozilla.</p>
+<p>Selenium IDE download and install step by step process</p>
+<ul class="simple">
+<li>Open Mozilla Firefox</li>
+<li>Type URL: <a class="reference external" href="http://seleniumhq.org/download/">http://seleniumhq.org/download/</a> in your browser. Selenium IDE download page will get open then click on latest Download version link as shown in image below. Click on that link.</li>
+<li>When you click on latest Selenium IDE Download version link, Firefox will show one popup saying do you want to allow Mozilla Firefox to install selenium IDE or not. Click on Allow button as shown in image below.</li>
+<li>When you click on allow button, Firefox will automatically install Selenium IDE software. After completion of Selenium IDE installation, it will show one pop up</li>
+<li>When you click on Restart Now button, Firefox will restart automatically. Now click on Tools menu list displayed in top. You can see there selenium IDE as shown in image below.</li>
+<li>Click on Selenium IDE as shown in image above. It will launch IDE software window as shown in image below,</li>
 </ul>
 </div>
+</div>
+<div class="section" id="record-sample-script-in-selenium-ide">
+<h2>Record sample script in Selenium IDE<a class="headerlink" href="#record-sample-script-in-selenium-ide" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Open new tab in Mozilla Firefox browser</li>
+<li>Click on tools - &gt; Selenium IDE ( Ctrl+Alt+S ) to open Selenium IDE window.</li>
+<li>Click on &#8220;Record&#8221; button. (Note: It will start recording all navigation and action once you click on &#8220;Record&#8221; button.)</li>
+<li>Now enter URL &#8220;<a class="reference external" href="https://www.google.co.in/">https://www.google.co.in/</a>&#8221; in your browser. (Selenium IDE will record that action. Make sure your recording is working fine.)</li>
+<li>Click on &#8220;Images&#8221; link displayed in main menu.</li>
+<li>Click on &#8220;Maps&#8221; link displayed in main menu.</li>
+<li>Click on &#8220;Play&#8221; link displayed in main menu.</li>
+<li>Stop Selenium IDE recording by clicking on &#8220;Stop Record&#8221; button. Your recording is completed now.</li>
+</ul>
 </div>
 </div>
 
@@ -214,8 +251,8 @@
 
         <li>
           Go to
-        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/index.rst">
-          Kevells Selenium Documentation
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/selinum.rst">
+          Selenium
         </a> on GitHub.
       </li>
 
