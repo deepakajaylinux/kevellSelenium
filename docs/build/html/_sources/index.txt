@@ -10,7 +10,7 @@ Commands
 .. toctree::
    :maxdepth: 2
 
-   selinum.rst 
+   selenium.rst 
 
 
 
