@@ -33,23 +33,23 @@ Selenium IDE download and install step by step process
 * Type URL: http://seleniumhq.org/download/ in your browser. Selenium IDE download page will get open then click on latest Download version 
   link as shown in image below. Click on that link.
 
-.. image:: /image/version.jpg
+.. image:: ../image/version.jpg
 
 * When you click on latest Selenium IDE Download version link, Firefox will show one popup saying do you want to allow Mozilla Firefox to 
   install selenium IDE or not. Click on Allow button as shown in image below.
 
-.. image:: /image/allow.jpg
+.. image:: ../image/allow.jpg
 
 * When you click on allow button, Firefox will automatically install Selenium IDE software. After completion of Selenium IDE installation, 
   it will show one pop up
 
-.. image:: /image/launchselenium.jpg
+.. image:: ../image/launchselenium.jpg
 
 
 * When you click on Restart Now button, Firefox will restart automatically. Now click on Tools menu list displayed in top. You can see there 
   selenium IDE as shown in image below.
 
-.. image:: /image/restart.jpg
+.. image:: ../image/restart.jpg
 
 
 * Click on Selenium IDE as shown in image above. It will launch IDE software window as shown in image below,
