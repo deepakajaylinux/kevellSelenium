@@ -39,7 +39,8 @@ Selenium IDE download and install step by step process
 
 
 .. image:: ../image/version.jpg
- :align: center
+    :width: 200px
+    :align: center
 
 
 * When you click on latest Selenium IDE Download version link, Firefox will show one popup saying do you want to allow Mozilla Firefox to 
@@ -47,7 +48,8 @@ Selenium IDE download and install step by step process
 
 
 .. image:: ../image/allow.jpg
- :align: center
+    :width: 200px
+    :align: center
 
 
 * When you click on allow button, Firefox will automatically install Selenium IDE software. After completion of Selenium IDE installation, 
@@ -55,7 +57,9 @@ Selenium IDE download and install step by step process
 
 
 .. image:: ../image/launchselenium.jpg
- :align: center
+    :width: 200px
+    :align: center
+
 
 
 * When you click on Restart Now button, Firefox will restart automatically. Now click on Tools menu list displayed in top. You can see there 
@@ -63,7 +67,8 @@ Selenium IDE download and install step by step process
 
 
 .. image:: ../image/restart.jpg
- :align: center
+    :width: 200px
+    :align: center
 
 
 * Click on Selenium IDE as shown in image above. It will launch IDE software window as shown in image below,
@@ -76,7 +81,7 @@ Record sample script in Selenium IDE
 * Open new tab in Mozilla Firefox browser
 * Click on tools - > Selenium IDE ( Ctrl+Alt+S ) to open Selenium IDE window.
 * Click on "Record" button. (Note: It will start recording all navigation and action once you click on "Record" button.)
-* Now enter URL 'https://www.google.co.in/'_ in your browser. (Selenium IDE will record that action. Make sure your recording is working fine.)
+* Now enter URL "https://www.google.co.in/" in your browser. (Selenium IDE will record that action. Make sure your recording is working fine.)
 * Click on "Images" link displayed in main menu.
 * Click on "Maps" link displayed in main menu.
 * Click on "Play" link displayed in main menu.
