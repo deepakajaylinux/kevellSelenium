@@ -34,11 +34,11 @@ Install the firefox browser from Mozilla.
 Selenium IDE download and install step by step process
 
 * Open Mozilla Firefox 
-* Type URL: http://seleniumhq.org/download/ in your browser. Selenium IDE download page will get open then click on latest Download version 
-  link as shown in image below. Click on that link.
+* Type URL: '<http://seleniumhq.org/download/>'_ in your browser. Selenium IDE download page will get open then click on latest Download 
+  version link as shown in image below. Click on that link.
 
 
-.. image:: ../image/version.jpg
+.. figure:: ../image/version.jpg
     :width: 200px
     :align: center
 
@@ -47,7 +47,7 @@ Selenium IDE download and install step by step process
   install selenium IDE or not. Click on Allow button as shown in image below.
 
 
-.. image:: ../image/allow.jpg
+.. figure:: ../image/allow.jpg
     :width: 200px
     :align: center
 
@@ -56,7 +56,7 @@ Selenium IDE download and install step by step process
   it will show one pop up
 
 
-.. image:: ../image/launchselenium.jpg
+.. figure:: ../image/launchselenium.jpg
     :width: 200px
     :align: center
 
@@ -66,7 +66,7 @@ Selenium IDE download and install step by step process
   selenium IDE as shown in image below.
 
 
-.. image:: ../image/restart.jpg
+.. figure:: ../image/restart.jpg
     :width: 200px
     :align: center
 
